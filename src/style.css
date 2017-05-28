@@ -124,6 +124,10 @@ body {
   margin: 0 auto;
 }
 
+.wrapper--small {
+  max-width: 850px;
+}
+
 .flex-wrapper {
   display: flex;
   flex-direction: column;
@@ -216,11 +220,8 @@ body {
   display: none;
 }
 
-.speaker__badge {
-  position: absolute;
-  top: 190px;
-  height: 25px;
-  z-index: 2;
+.speaker__role {
+  font-size: 14px;
 }
 
 /* Footer */
