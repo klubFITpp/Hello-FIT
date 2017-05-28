@@ -1,0 +1,8 @@
+.editorconfig text
+.gitattributes text
+.gitignore text
+LICENSE text
+
+*.css text
+*.html text
+*.md text
