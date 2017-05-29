@@ -38,6 +38,7 @@ body {
   text-decoration: none;
   position: relative; /* Because of it's ::after element. */
   color: #444;
+  white-space: nowrap;
 }
 
 .link::after {
