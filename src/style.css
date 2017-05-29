@@ -24,8 +24,12 @@ body {
 /* Text */
 
 .text {
-  margin: 50px 0;
+  margin-top: 50px;
   line-height: 1.4em;
+}
+
+.text--no-margin {
+  margin-top: 0;
 }
 
 /* Link */
@@ -82,12 +86,12 @@ body {
 }
 
 .btn:hover {
-   animation-name: pulse;
-   animation-duration: .3s;
-   animation-timing-function: linear;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
- }
+  animation-name: pulse;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 
 /* Heading */
 
@@ -109,7 +113,7 @@ body {
 }
 
 .heading--push-up {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .heading--push-down {
@@ -140,6 +144,22 @@ body {
   flex-direction: row;
 }
 
+/* Section */
+
+.section {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.section--highlight {
+  background-color: #f1f1f1;
+}
+
+.section--contrast {
+  background-color: #0079c2;
+  color: white;
+}
+
 /* Header */
 
 .header {
@@ -149,19 +169,6 @@ body {
 
 .header__pushed-content {
   margin-top: 20px;
-}
-
-/* Section */
-
-.section {
-  background: #f1f1f1;
-  padding: 50px 0;
-  margin: 0;
-}
-
-.section--contrast {
-  background: #0079c2;
-  color: white;
 }
 
 /* Speaker */
@@ -191,7 +198,10 @@ body {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  border-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
   filter: grayscale(100%);
   margin-bottom: 20px;
 }
@@ -228,7 +238,6 @@ body {
 
 .footer {
   background: #f9f9f9;
-  padding: 50px 0;
 }
 
 .footer__content {
