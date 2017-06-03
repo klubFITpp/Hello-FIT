@@ -31,3 +31,4 @@ typings/
 /dist/img/*
 /dist/css/*
 !.gitkeep
+robots.txt

@@ -17,6 +17,8 @@ Zatím ručně.
 
 ## TODO
 
+- [ ] Projít a upravit texty (copy)
+- [ ] Bio u všech
 - [ ] Auto deploy (malé CI)
 - [ ] Minifikace assetů
 

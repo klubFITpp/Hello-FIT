@@ -42,18 +42,60 @@ ul li:before {
 
 .program-point h3 {
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .program-point p {
-    margin-left: 30px;
-    font-size: 18px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-weight: 200;
     text-align: justify;
 }
 
 .program-point {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+    max-width: 600px;
+}
+
+//noinspection CssNoGenericFontName
+
+.subtitle-with-icon-before {
+    display: block;
+    font-size: 15px;
+    position: relative;
+    padding-left: 18px;
+    margin-right: 20px;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.icon-before {
+    font-family: fontello;
+    font-style: normal;
+    font-size: 12px;
+    position: absolute;
+    top: 2px;
+    width: 15px;
+    text-align: center;
+    left: 0;
+}
+
+.speakers {
+    @extend .subtitle-with-icon-before;
+}
+
+.speakers::before {
+    content: ''; // There is a char!
+    margin-right: -2px;
+    @extend .icon-before;
+}
+
+.timing {
+    @extend .subtitle-with-icon-before;
+}
+
+.timing::before {
+    content: ''; // There is a char!
+    @extend .icon-before;
 }
