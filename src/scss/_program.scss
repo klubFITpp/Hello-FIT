@@ -1,0 +1,42 @@
+$foreground-color: #FFF;
+
+
+$point-size: 12px;
+$line-thickness: 2px;
+
+ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+ul li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 30px;
+}
+
+ul:before {
+    position: absolute;
+    content: '';
+    width: $line-thickness;
+    top: -20px;
+    bottom: -20px;
+    left: $point-size/2-$line-thickness/2;
+    background: linear-gradient(to bottom, transparent 0, $foreground-color 40px, $foreground-color calc(100% - 40px), transparent 100%);
+}
+
+ul li:before {
+    content: '';
+    position: absolute;
+    height: $point-size;
+    width: $point-size;
+    border-radius: $point-size/2;
+    top: 5px;
+    left: 0;
+    background-color: $foreground-color;
+}
+
+.program-point h3 {
+    font-weight: normal;
+}
