@@ -6,7 +6,7 @@
 
 Potřebujete gulp. Co a jak viz [gulpjs.com](http://gulpjs.com)
 
-Při vývoje zapnětě `gulp watch` a spuste dist/index.html, případně si dopořidtě broswer-sync. 
+Při vývoji, nejdřív `npm install` a pak zapnětě `gulp watch` a spuste dist/index.html, případně si dopořidtě broswer-sync. 
 
 ## Deploy
 

@@ -1,8 +1,8 @@
 $foreground-color: #FFF;
+$backgournd-color: $fit-blue;
 
-
-$point-size: 12px;
-$line-thickness: 2px;
+$point-size: 16px;
+$line-thickness: 4px;
 
 ul {
     margin: 0;
@@ -23,7 +23,7 @@ ul:before {
     top: -20px;
     bottom: -20px;
     left: $point-size/2-$line-thickness/2;
-    background: linear-gradient(to bottom, transparent 0, $foreground-color 40px, $foreground-color calc(100% - 40px), transparent 100%);
+    background: linear-gradient(to bottom, transparent 0, rgba($foreground-color, .4) 40px, rgba($foreground-color, .4) calc(100% - 40px), transparent 100%);
 }
 
 ul li:before {
@@ -33,10 +33,27 @@ ul li:before {
     width: $point-size;
     border-radius: $point-size/2;
     top: 5px;
+
+    box-sizing: border-box;
     left: 0;
-    background-color: $foreground-color;
+    background-color: $fit-blue;
+    border: 2px solid $foreground-color;
 }
 
 .program-point h3 {
     font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.program-point p {
+    margin-left: 30px;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.program-point {
+    margin-bottom: 40px;
 }

@@ -1,37 +1,15 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta property="og:type" content="profile">
-    <meta property="og:title" content="Hello FIT!">
-    <meta property="og:description" content="Populárně naučný úvod do studia na FIT ČVUT.">
-    <meta property="og:url" content="http://hellofit.cz">
-    <meta property="og:image" content="http://hellofit.cz/img/poster.jpg">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="http://hellofit.cz">
-    <meta name="twitter:title" content="Hello FIT!">
-    <meta name="twitter:description" content="Populárně naučný úvod do studia na FIT ČVUT.">
-    <meta name="twitter:image" content="http://hellofit.cz/img/poster.jpg">
-
-    <title>Hello FIT!</title>
-    <meta name="description" content="Populárně naučný úvod do studia na FIT ČVUT.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="FIT++">
-
-    <link rel="stylesheet" href="css/style.css?v=4"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+@@include('index-parts/head.html)
 </head>
 <body>
 <header class="section section--highlight header">
     <h1 class="heading--big">Hello FIT!</h1>
     <h2 class="heading--small">populárně naučný úvod do studia</h2>
     <h2 class="heading--small header__pushed-content">21. září od 10:00, <a class="link"
-                                                                                    href="https://www.google.cz/maps/place/Fakulta+informa%C4%8Dn%C3%ADch+technologi%C3%AD+%C4%8CVUT"
-                                                                                    target="_blank">FIT ČVUT</a></h2>
+                                                                            href="https://www.google.cz/maps/place/Fakulta+informa%C4%8Dn%C3%ADch+technologi%C3%AD+%C4%8CVUT"
+                                                                            target="_blank">FIT ČVUT</a></h2>
     <h2 class="heading heading--small header__pushed-content"><a class="link"
                                                                  href="https://twitter.com/search?f=tweets&vertical=default&q=%23hellofit2017&src=typd"
                                                                  target="_blank">#hellofit2017</a></h2>
@@ -68,37 +46,8 @@
 <div class="section section--contrast">
     <div class="wrapper">
         <h2 class="heading heading--push-down">Program</h2>
-
         <div class="flex-wrapper program">
-            <ul>
-                <li>
-                    <div class="program-point"><h3>Studentská unie ČVUT </h3></div>
-                </li>
-                <li>
-                    <div class="program-point"><h3>Kluby Studentské unie ČVUT </h3></div>
-                </li>
-                <li>
-                    <div class="program-point"><h3>Prohlídka Kampusu Dejvice </h3></div>
-                </li>
-                <li>
-                    <div class="program-point"><h3>První dny v kůži vysokoškoláka </h3></div>
-                </li>
-                <li>
-                    <div class="program-point"><h3>Jak úspěšně projít (nejen) prvním semestrem </h3></div>
-                </li>
-                <li>
-                    <div class="program-point"><h3>Absolventi FITu </h3></div>
-                </li>
-                <li>
-                    <div class="program-point"><h3>Úvod do Linuxu || Workshop: Pokročilé triky v shellu </h3></div>
-                </li>
-                <li>
-                    <div class="program-point"><h3>Workshop: Pokročilé programování </h3></div>
-                </li>
-                <li>
-                    <div class="program-point"><h3>Afterpárty </h3></div>
-                </li>
-            </ul>
+            @@include('index-parts/program.html')
         </div>
     </div>
 </div>
@@ -107,99 +56,7 @@
     <h2 class="heading heading--push-down">Na koho se můžeš těšit</h2>
 
     <div class="speakers">
-        <div class="speaker">
-            <div class="speaker__avatar" style="background-image: url('img/speakers/moudra.png')"></div>
-            <h3 class="speaker__name">Jana Moudrá</h3>
-            <div class="speaker__role">přednášející</div>
-            <a class="link speaker__social" href="http://twitter.com/Janamou" target="_blank">@Janamou</a>
-            <p class="speaker__info">Jana...</p>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker__avatar" style="background-image: url('img/speakers/strnad.png')"></div>
-            <h3 class="speaker__name">Václav Strnad</h3>
-            <div class="speaker__role">přednášející</div>
-            <a class="link speaker__social" href="http://twitter.com/vaclavstrnad" target="_blank">@vaclavstrnad</a>
-            <p class="speaker__info">Vašek...</p>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker__avatar" style="background-image: url('img/speakers/hodac.png')"></div>
-            <h3 class="speaker__name">Petr Hodač</h3>
-            <div class="speaker__role">workshop</div>
-            <a class="link speaker__social" href="http://twitter.com/petrhodac" target="_blank">@petrhodac</a>
-            <p class="speaker__info">Petr...</p>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker__avatar" style="background-image: url('img/speakers/bernhauer.png')"></div>
-            <h3 class="speaker__name">David Bernhauer</h3>
-            <div class="speaker__role">přednášející, workshop</div>
-            <span class="link speaker__social"></span>
-            <p class="speaker__info">David...</p>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker__avatar" style="background-image: url('img/speakers/schovankova.png')"></div>
-            <h3 class="speaker__name">Klára Schovánková</h3>
-            <div class="speaker__role">workshop</div>
-            <span class="link speaker__social"></span>
-            <p class="speaker__info">Klára...</p>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker__avatar" style="background-image: url('img/speakers/bittner.png')"></div>
-            <h3 class="speaker__name">Honza Bittner</h3>
-            <div class="speaker__role">organizátor, přednášející</div>
-            <a class="link speaker__social" href="http://twitter.com/tenhobi" target="_blank">@tenhobi</a>
-            <p class="speaker__info">Honza je předseda klubu FIT++ a kromě toho píše články do fakultního časopisu Buď&nbsp;FIT
-                a na ITnetwork.cz. Ve svém volném čase si hraje s jazykem Dart, rád čte, snaží se dělat open source a
-                pravidelně běhá &ndash; zastává pravidlo „Buď&nbsp;FIT,&nbsp;žij&nbsp;FIT!"</p>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker__avatar" style="background-image: url('img/speakers/kurka.png')"></div>
-            <h3 class="speaker__name">Milan Kurka</h3>
-            <div class="speaker__role">organizátor, přednášející</div>
-            <a class="link speaker__social" href="http://twitter.com/MilanKurka" target="_blank">@MilanKurka</a>
-            <p class="speaker__info">Milan je členem FIT++, kde se stará o grafiku a propagaci. Mimo klub pracuje na
-                fakultním časopise Buď&nbsp;FIT a nově také pomáhá organizovat Seznamovák či SHOW&nbsp;2018. Ve svém
-                volném čase se kromě IT věnuje grafice a designu.</p>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker__avatar" style="background-image: url('img/speakers/hosna.png')"></div>
-            <h3 class="speaker__name">Michal Hošna</h3>
-            <div class="speaker__role">organizátor, přednášející</div>
-            <a class="link speaker__social" href="http://twitter.com/michalhosna" target="_blank">@michalhosna</a>
-            <p class="speaker__info">Michal...</p>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker__avatar" style="background-image: url('img/speakers/jerabek.png')"></div>
-            <h3 class="speaker__name">Stanislav Jeřábek</h3>
-            <div class="speaker__role">přednášející</div>
-            <span class="link speaker__social"></span>
-            <p class="speaker__info">Standa...</p>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker__avatar" style="background-image: url('img/speakers/topic.png')"></div>
-            <h3 class="speaker__name">Jakub Topič</h3>
-            <div class="speaker__role">přednášející</div>
-            <a class="link speaker__social" href="http://twitter.com/jakubtopic" target="_blank">@jakubtopic</a>
-            <p class="speaker__info">Kuba...</p>
-        </div>
-
-        <div class="speaker">
-            <div class="speaker__avatar" style="background-image: url('img/speakers/jezek.png')"></div>
-            <h3 class="speaker__name">Radek Ježek</h3>
-            <div class="speaker__role">přednášející</div>
-            <span class="link speaker__social"></span>
-            <p class="speaker__info">Radek je členem FIT++. Baví ho programování, stolní tenis, bydlení na Strahově,
-                tvorba grafiky a videí, ale ze všeho nejvíce studium na FITu! Zajímá se o nové technologie, chytré
-                gadgety, AI, software a vše kolem toho.</p>
-        </div>
+        @@include('index-parts/speakers.html')
     </div>
 
     <p class="text">Na akci se dále se podílejí také Jaroslav Kříž a Martin Hanuš.</p>
