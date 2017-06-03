@@ -27,6 +27,7 @@ typings/
 .yarn-integrity
 .env
 
-/dist
-!/dist/css/.gitkeep
-!/dist/img/.gitkeep
+/dist/*.*
+/dist/img/*
+/dist/css/*
+!.gitkeep
