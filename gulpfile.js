@@ -16,7 +16,7 @@ gulp.task('copy-static', function () {
 
 
 gulp.task('compile-index', function() {
-    gulp.src(['index.html'])
+    gulp.src('src/index.html')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
