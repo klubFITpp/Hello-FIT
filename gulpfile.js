@@ -2,10 +2,14 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var useref = require('gulp-useref');
 var fileinclude = require('gulp-file-include');
+var autoprefixer = require('gulp-autoprefixer');
+var minifyHtml = require("gulp-minify-html");
+var minifyCss = require("gulp-minify-css");
 
 gulp.task('sass', function () {
     return gulp.src('src/scss/**/*.scss')
-        .pipe(sass()) // Using gulp-sass
+        .pipe(sass())
+        .pipe(autoprefixer())
         .pipe(gulp.dest('dist/css'))
 });
 
@@ -26,6 +30,17 @@ gulp.task('compile-index', function() {
         .pipe(gulp.dest('dist'));
 });
 
+gulp.task('compress', function () {
+    gulp.src('dist/**/*.html')
+        .pipe(minifyHtml())
+        .pipe(gulp.dest('dist'));
+    gulp.src('dist/css/**/*.css') // path to your file
+        .pipe(minifyCss())
+        .pipe(gulp.dest('dist/css'));
+});
+
+
+
 gulp.task('watch', function () {
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch(['src/img/**/*', 'src/fonts/**/*'], ['copy-static']);
@@ -34,4 +49,6 @@ gulp.task('watch', function () {
 
 
 
-gulp.task('build', ['copy-static', 'compile-index', 'sass']);
+
+
+gulp.task('build', ['copy-static', 'compile-index', 'sass', 'compress']);
