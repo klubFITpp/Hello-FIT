@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+    <metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+    <defs>
+        <font id="fontello" horiz-adv-x="1000">
+            <font-face font-family="fontello"
+                       font-weight="400"
+                       font-stretch="normal"
+                       units-per-em="1000"
+                       ascent="850"
+                       descent="-150" />
+            <missing-glyph horiz-adv-x="1000" />
+            <glyph glyph-name="adult"
+                   unicode="&#xe800;"
+                   d="M0-132l0 289q0 103 60 177t157 75l330 0q101-2 158-76t57-176l0-289q0-18-18-18l-105 0q-16 0-16 18l0 252q-6 27-27 24t-22-24l0-252q-2-18-19-18l-352 0q-17 0-17 18l0 252q-4 27-26 24t-23-24l0-252q0-18-18-18l-101 0q-18 0-18 18z m186 783q0 82 59 140t140 59q86-4 142-60t59-139q-2-84-61-143t-140-58q-84 2-142 60t-57 141z"
+                   horiz-adv-x="762" />
+
+            <glyph glyph-name="stopwatch"
+                   unicode="&#xe801;"
+                   d="M0 617l246 246 81-82-40-41 42-43q58 34 124 52v101h231v-101q99-26 178-90t124-158 45-200q0-94-36-180t-99-148-148-99-179-37-181 37-147 99-99 148-37 180q0 123 62 231l-44 44-41-41z m222-316q0-94 46-174t127-127 174-47 174 47 126 127 47 174-47 174-126 126-174 47-174-47-127-126-46-174z m118 130q0 24 16 41 17 17 41 17t41-17l140-140h198q24 0 41-17t16-41q0-25-17-40-17-18-40-18h-222q-3 0-11 1l-5 2q-1 0-3 1t-3 0q-1 1-3 2t-2 1l-5 3q-3 2-9 8l-157 156q-16 17-16 41z"
+                   horiz-adv-x="1031.7" />
+        </font>
+    </defs>
+</svg>

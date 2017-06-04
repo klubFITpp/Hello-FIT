@@ -1,0 +1,101 @@
+$foreground-color: #FFF;
+$backgournd-color: $fit-blue;
+
+$point-size: 16px;
+$line-thickness: 4px;
+
+ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+ul li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 30px;
+}
+
+ul:before {
+    position: absolute;
+    content: '';
+    width: $line-thickness;
+    top: -20px;
+    bottom: -20px;
+    left: $point-size/2-$line-thickness/2;
+    background: linear-gradient(to bottom, transparent 0, rgba($foreground-color, .4) 40px, rgba($foreground-color, .4) calc(100% - 40px), transparent 100%);
+}
+
+ul li:before {
+    content: '';
+    position: absolute;
+    height: $point-size;
+    width: $point-size;
+    border-radius: $point-size/2;
+    top: 5px;
+
+    box-sizing: border-box;
+    left: 0;
+    background-color: $fit-blue;
+    border: 2px solid $foreground-color;
+}
+
+.program-point h3 {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.program-point p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.program-point {
+    margin-bottom: 35px;
+    max-width: 600px;
+}
+
+//noinspection CssNoGenericFontName
+
+.subtitle-with-icon-before {
+    display: block;
+    font-size: 15px;
+    position: relative;
+    padding-left: 18px;
+    margin-right: 20px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.icon-before {
+    font-family: fontello;
+    font-style: normal;
+    font-size: 12px;
+    position: absolute;
+    top: 2px;
+    width: 15px;
+    text-align: center;
+    left: 0;
+}
+
+.speakers {
+    @extend .subtitle-with-icon-before;
+}
+
+.speakers::before {
+    content: ''; // There is a char!
+    margin-right: -2px;
+    @extend .icon-before;
+}
+
+.timing {
+    @extend .subtitle-with-icon-before;
+}
+
+.timing::before {
+    content: ''; // There is a char!
+    @extend .icon-before;
+}
