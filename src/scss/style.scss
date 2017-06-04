@@ -115,6 +115,12 @@ body {
     letter-spacing: -2px;
 }
 
+@media all and (max-width: 500px){
+    .heading--big {
+        font-size: 30vw;
+    }
+}
+
 .heading--small {
     @extend .heading;
     font-size: 24px;
