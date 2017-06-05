@@ -26,6 +26,7 @@ typings/
 *.tgz
 .yarn-integrity
 .env
+package-lock.json
 
 /dist/
 !.gitkeep
