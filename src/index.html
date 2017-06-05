@@ -50,5 +50,36 @@
 </footer>
 
 @@include('./index-parts/ga.html')
+
+<script>
+    function onMouseOut(event) {
+        var e = event.toElement || event.relatedTarget;
+
+        if (e !== null) {
+            if (e.parentNode === this || e === this || e.relatedTarget === this) {
+                return;
+            }
+        }
+
+        var classes = document.body.className.split(' ');
+        var idx = classes.indexOf('is--hell');
+        if (idx !== -1){
+            classes.splice(idx,1);
+        }
+        document.body.className = classes.join(' ');
+    }
+
+    function onMouseOver(event) {
+        var classes = document.body.className.split(' ');
+        if (classes.indexOf('is--hell') === -1) {
+            classes.push('is--hell');
+        }
+
+        document.body.className = classes.join(' ');
+    }
+
+    document.getElementsByClassName('hell__link')[0].addEventListener('mouseout',onMouseOut,true);
+    document.getElementsByClassName('hell__link')[0].addEventListener('mouseover',onMouseOver,true);
+</script>
 </body>
 </html>

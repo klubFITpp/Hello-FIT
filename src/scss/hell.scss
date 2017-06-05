@@ -8,6 +8,10 @@
   text-decoration: none;
   cursor: pointer;
   color: $text-color;
+
+  .is--hell & {
+    color: #fff;
+  }
 }
 
 .hell__space--on::before {

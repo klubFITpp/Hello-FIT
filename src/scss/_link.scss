@@ -3,6 +3,10 @@
   position: relative; /* Because of it's ::after element. */
   color: #444;
   white-space: nowrap;
+
+  .is--hell .header & {
+    color: #fff;
+  }
 }
 
 .link::after {
@@ -14,6 +18,10 @@
   left: 0;
   bottom: 0;
   content: '';
+
+  .is--hell .header & {
+    background: #fff;
+  }
 }
 
 .link:hover {
