@@ -13,12 +13,3 @@ Při vývoji, nejdřív `npm install` a pak zapnětě `gulp watch` a spuste dist
 Zatím ručně.
 
 `gulp build`
-
-
-## TODO
-
-- [ ] Projít a upravit texty (copy)
-- [ ] Bio u všech
-- [ ] Auto deploy (malé CI)
-- [ ] Minifikace assetů
-

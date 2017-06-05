@@ -5,10 +5,10 @@
 </head>
 <body>
 <header class="section section--highlight header">
-    <h1 class="heading--big">Hello FIT!</h1>
-    <h2 class="heading--small">populárně naučný úvod do studia</h2>
-    <h2 class="heading--small header__pushed-content">21. září od 10:00, <a class="link"
-                                                                            href="https://www.google.cz/maps/place/Fakulta+informa%C4%8Dn%C3%ADch+technologi%C3%AD+%C4%8CVUT"
+    <h1 class="heading heading--big">Hello FIT!</h1>
+    <h2 class="heading heading--small">populárně naučný úvod do studia</h2>
+    <h2 class="heading heading--small header__pushed-content">21. září od 10:00, <a class="link"
+                                                                            href="https://www.google.cz/maps/place/Fakulta+informa%C4%8Dn%C3%ADch+technologi%C3%AD+%C4%8CVUT/@50.1051168,14.3875033,17z/data=!3m1!4b1!4m5!3m4!1s0x470b953a124e3999:0x8eb9c6f77808fa69!8m2!3d50.1051168!4d14.389692"
                                                                             target="_blank">FIT ČVUT</a></h2>
     <h2 class="heading heading--small header__pushed-content"><a class="link"
                                                                  href="https://twitter.com/search?f=tweets&vertical=default&q=%23hellofit2017&src=typd"
@@ -20,37 +20,19 @@
 </div>
 
 <div class="section section--contrast">
-    <div class="wrapper">
-        <h2 class="heading heading--push-down">Program</h2>
-        <div class="heading--subnote">Jen to furt jen nástřel, ale moc změn už tam snad nebude</div>
-        <div class="flex-wrapper">
-            @@include('./index-parts/program.html')
-        </div>
-    </div>
+    @@include('./index-parts/program.html')
 </div>
 
 <div class="section wrapper">
-    <h2 class="heading heading--push-down">Na koho se můžeš těšit</h2>
-
-    <div class="speakers">
-        @@include('./index-parts/speakers.html')
-    </div>
-
-    <p class="text">Na akci se dále se podílejí také Jaroslav Kříž a Martin Hanuš.</p>
+    @@include('./index-parts/speakers.html')
 </div>
 
 <div class="section section--highlight">
-    <div class="wrapper">
-        <h2 class="heading heading--push-down">FIT++</h2>
-        <p class="text">Hello FIT! pro tebe připravil klub FIT++.</p>
-        <p class="text">Jsme studenti FITu, kteří mají rádi svoji fakultu a chtějí ji udělat ještě lepší. Dobrých lidí s
-            dobrými nápady je vždy málo, tak jsme si vytvořili klub a společně organizujeme akce jako FIT párty, FIT LAN
-            párty, Hello FIT!, šifrovačku sEGGfault a mnoho dalšího.</p>
-    </div>
+    @@include('./index-parts/fitpp.html')
 </div>
 
 <footer class="section footer">
-    <div class="wrapper">
+    <div class="wrapper ">
         <div class="footer__content">
             <div class="footer__logo-wrapper">
                 <a class="footer__logo-link" href="http://fitpp.sh.cvut.cz" target="_blank">

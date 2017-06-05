@@ -67,7 +67,7 @@ gulp.task('compress', function () {
         .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', ['build'], function () {
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch(['src/img/**/*', 'src/fonts/**/*'], ['copy-static']);
     gulp.watch(['src/**/*.html'], ['compile-index']);
