@@ -1,0 +1,30 @@
+@keyframes pulse {
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.btn {
+  background: #0079c2;
+  cursor: pointer;
+  margin: .4em;
+  padding: 1em;
+  text-decoration: none;
+
+  display: inline-block;
+  text-transform: uppercase;
+  /*padding: 25px 30px;*/
+  color: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+
+  font-weight: 500;
+}
+
+.btn:hover {
+  animation-name: pulse;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

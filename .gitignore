@@ -27,8 +27,6 @@ typings/
 .yarn-integrity
 .env
 
-/dist/*.*
-/dist/img/*
-/dist/css/*
+/dist/
 !.gitkeep
 robots.txt

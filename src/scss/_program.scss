@@ -1,22 +1,16 @@
 $foreground-color: #FFF;
-$backgournd-color: $fit-blue;
+$backgournd-color: $fitpp-blue;
 
 $point-size: 16px;
 $line-thickness: 4px;
 
-ul {
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
+.program {
+  position: relative; // because of absolute ::before
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
 
-ul li {
-    list-style-type: none;
-    position: relative;
-    padding-left: 30px;
-}
-
-ul:before {
+  &::before {
     position: absolute;
     content: '';
     width: $line-thickness;
@@ -24,54 +18,62 @@ ul:before {
     bottom: -20px;
     left: $point-size/2-$line-thickness/2;
     background: linear-gradient(to bottom, transparent 0, rgba($foreground-color, .4) 40px, rgba($foreground-color, .4) calc(100% - 40px), transparent 100%);
+  }
 }
 
-ul li:before {
+.program__item {
+  position: relative; // because of absolute ::before
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &::before {
     content: '';
     position: absolute;
     height: $point-size;
     width: $point-size;
     border-radius: $point-size/2;
-    top: 5px;
-
+    top: 7px;
     box-sizing: border-box;
-    left: 0;
-    background-color: $fit-blue;
+    left: -40px;
+    background-color: $fitpp-blue;
     border: 2px solid $foreground-color;
+  }
 }
 
-.program-point h3 {
-    font-weight: normal;
-    margin-bottom: 5px;
+.program__heading {
+  font-weight: normal;
+  margin-bottom: 5px;
+  font-size: 26px;
+  text-align: left;
 }
 
-.program-point p {
-    font-size: 16px;
-    margin-bottom: 30px;
-    margin-top: 15px;
-    font-weight: 300;
-    text-align: justify;
+.program__info {
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  font-weight: 300;
+  text-align: justify;
 }
 
-.program-point {
-    margin-bottom: 35px;
-    max-width: 600px;
+.program__item {
+  margin-bottom: 35px;
+  max-width: 600px;
 }
 
-//noinspection CssNoGenericFontName
+.program__time,
+.program__speakers {
+  display: block;
+  font-size: 15px;
+  position: relative; // because of absolute ::before
+  padding-left: 20px;
+  margin-right: 20px;
+  font-weight: 300;
+  margin-bottom: 5px;
 
-.subtitle-with-icon-before {
-    display: block;
-    font-size: 15px;
-    position: relative;
-    padding-left: 18px;
-    margin-right: 20px;
-    font-weight: 300;
-    margin-bottom: 5px;
-}
-
-.icon-before {
-    font-family: fontello;
+  &::before {
+    font-family: fontello, serif;
     font-style: normal;
     font-size: 12px;
     position: absolute;
@@ -79,23 +81,23 @@ ul li:before {
     width: 15px;
     text-align: center;
     left: 0;
+  }
 }
 
-.speakers {
-    @extend .subtitle-with-icon-before;
+.program__time::before {
+  content: '';
 }
 
-.speakers::before {
-    content: ''; // There is a char!
-    margin-right: -2px;
-    @extend .icon-before;
+.program__speakers::before {
+  content: '';
 }
-
-.timing {
-    @extend .subtitle-with-icon-before;
-}
-
-.timing::before {
-    content: ''; // There is a char!
-    @extend .icon-before;
-}
+//
+//.program__speakers {
+//  display: flex;
+//  flex-wrap: wrap;
+//  justify-content: center;
+//  align-items: flex-start;
+//  align-content: center;
+//  /*background: red;*/
+//}
+//

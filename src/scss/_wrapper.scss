@@ -1,0 +1,21 @@
+.wrapper {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.wrapper--small {
+  max-width: 850px;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-wrapper--row {
+  flex-direction: row;
+}

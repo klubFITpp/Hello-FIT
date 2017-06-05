@@ -1,0 +1,54 @@
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.speaker {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 320px;
+  align-items: center;
+  margin: 50px 20px;
+}
+
+.speaker__avatar {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  filter: grayscale(100%);
+  margin-bottom: 20px;
+}
+
+.speaker__name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.speaker__info {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.speaker__social {
+  display: inline-block;
+  color: #0079c2;
+  font-size: 18px;
+  line-height: 24px;
+  min-height: 24px;
+  font-weight: 400;
+
+  &::after {
+    display: none;
+  }
+}
+
+.speaker__role {
+  font-size: 14px;
+}
