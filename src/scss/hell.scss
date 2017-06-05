@@ -1,5 +1,11 @@
 @import 'variables';
 
+@keyframes pulse2 {
+  to {
+    transform: scale(1.05);
+  }
+}
+
 .hell {
   display: inline-block;
 }
@@ -7,7 +13,17 @@
 .hell__link {
   text-decoration: none;
   cursor: pointer;
+  position: relative;
   color: $text-color;
+  display: block;
+
+  &:hover {
+    animation-name: pulse2;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
 
   .is--hell & {
     color: #fff;
@@ -30,3 +46,12 @@
   }
 }
 
+.hell__fire {
+  display: none;
+
+  @media (min-width: 1130px) {
+    .is--hell & {
+      display: inline-block;
+    }
+  }
+}
