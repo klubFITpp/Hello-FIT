@@ -1,0 +1,20 @@
+.hell {
+  display: inline-block;
+}
+
+.hell__space--on::before {
+  content: ' ';
+
+  .hell:hover & {
+    content: '';
+  }
+}
+
+.hell__space--off::before {
+  content: '';
+
+  .hell:hover & {
+    content: ' ';
+  }
+}
+
