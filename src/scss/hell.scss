@@ -1,5 +1,13 @@
+@import 'variables';
+
 .hell {
   display: inline-block;
+}
+
+.hell__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: $text-color;
 }
 
 .hell__space--on::before {
