@@ -70,7 +70,8 @@ $line-thickness: 4px;
 }
 
 .program__time,
-.program__speakers {
+.program__speakers,
+.program__location {
   display: block;
   font-size: 15px;
   position: relative; // because of absolute ::before
@@ -92,9 +93,13 @@ $line-thickness: 4px;
 }
 
 .program__time::before {
-  content: '';
+  content: '\e801';
 }
 
 .program__speakers::before {
-  content: '';
+  content: '\e800';
+}
+
+.program__location::before {
+  content: '\f031';
 }
