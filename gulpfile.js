@@ -49,17 +49,8 @@ gulp.task('copy-static', function () {
         .pipe(gulp.dest('dist/fonts/'));
 });
 
-gulp.task('compile-index', function () {
-  gulp.src('src/index.html')
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest('dist'));
-});
-
-gulp.task('compile-2017', function () {
-    gulp.src('src/2017.html')
+gulp.task('compile-pages', function () {
+    gulp.src('src/*.html')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
@@ -79,7 +70,7 @@ gulp.task('compress', function () {
 gulp.task('watch', ['build'], function () {
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch(['src/img/**/*', 'src/fonts/**/*'], ['copy-static']);
-    gulp.watch(['src/**/*.html'], ['compile-index', 'compile-2017']);
+    gulp.watch(['src/**/*.html'], ['compile-pages']);
 });
 
-gulp.task('build', gulpSequence('copy-static', 'compile-index', 'sass', 'compress', 'responsive-img-speakers', 'compile-2017'));
+gulp.task('build', gulpSequence('copy-static', 'sass', 'compress', 'responsive-img-speakers', 'compile-pages'));
