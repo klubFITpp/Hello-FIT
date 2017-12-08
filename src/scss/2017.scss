@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #444;
+}
+
+@import '2017/normalize';
+@import '2017/fontello';
+@import '2017/text';
+@import '2017/link';
+@import '2017/btn';
+@import '2017/wrapper';
+@import '2017/heading';
+@import '2017/section';
+@import '2017/header';
+@import '2017/footer';
+@import '2017/speaker';
+@import '2017/program';

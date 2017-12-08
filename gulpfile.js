@@ -9,7 +9,7 @@ var responsive = require('gulp-responsive');
 var gulpSequence = require('gulp-sequence');
 
 gulp.task('responsive-img-speakers', function () {
-    return gulp.src('src/img/speakers/*.*')
+    return gulp.src('src/img/2017/speakers/*.*')
         .pipe(responsive({
             '*': [
                 {
@@ -32,7 +32,7 @@ gulp.task('responsive-img-speakers', function () {
             withMetadata: false,
             errorOnEnlargement: false
         }))
-        .pipe(gulp.dest('dist/img/speakers'));
+        .pipe(gulp.dest('dist/img/2017/speakers'));
 });
 
 gulp.task('sass', function () {
@@ -43,14 +43,23 @@ gulp.task('sass', function () {
 });
 
 gulp.task('copy-static', function () {
-    gulp.src('src/img/*.*')
+    gulp.src('src/img/**/*')
         .pipe(gulp.dest('dist/img/'));
     gulp.src('src/fonts/**/*')
         .pipe(gulp.dest('dist/fonts/'));
 });
 
 gulp.task('compile-index', function () {
-    gulp.src('src/index.html')
+  gulp.src('src/index.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('compile-2017', function () {
+    gulp.src('src/2017.html')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
@@ -70,7 +79,7 @@ gulp.task('compress', function () {
 gulp.task('watch', ['build'], function () {
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch(['src/img/**/*', 'src/fonts/**/*'], ['copy-static']);
-    gulp.watch(['src/**/*.html'], ['compile-index']);
+    gulp.watch(['src/**/*.html'], ['compile-index', 'compile-2017']);
 });
 
-gulp.task('build', gulpSequence('copy-static', 'compile-index', 'sass', 'compress', 'responsive-img-speakers'));
+gulp.task('build', gulpSequence('copy-static', 'compile-index', 'sass', 'compress', 'responsive-img-speakers', 'compile-2017'));
