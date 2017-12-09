@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    @@include('./index-parts/head.html')
+    @@include('./2018-parts/head.html')
 </head>
 <body>
-<header class="section section--highlight header">
-    <h1 class="heading heading--big hell"><a class="hell__link" href="https://twitter.com/kalvotom/status/871704275092688896" target="_blank"><span class="hell__fire">&#128293;&nbsp;</span>Hell<span class="hell__space--off"></span>o<span class="hell__space hell__space--on"></span>F<span class="hell__space hell__space--off"></span>IT!<span class="hell__fire">&nbsp;&#128293;</span></a></h1>
-    <h2 class="heading heading--small">populárně naučný úvod do studia</h2>
-    <h2 class="heading heading--small header__pushed-content">21. září od 10:00, <a class="link"
-                                                                            href="https://www.google.cz/maps/place/Fakulta+informa%C4%8Dn%C3%ADch+technologi%C3%AD+%C4%8CVUT/@50.1051168,14.3875033,17z/data=!3m1!4b1!4m5!3m4!1s0x470b953a124e3999:0x8eb9c6f77808fa69!8m2!3d50.1051168!4d14.389692"
-                                                                            target="_blank">FIT ČVUT</a></h2>
-    <h2 class="heading heading--small header__pushed-content"><a class="link"
-                                                                 href="https://twitter.com/search?f=tweets&vertical=default&q=%23hellofit2017&src=typd"
-                                                                 target="_blank">#hellofit2017</a></h2>
+<header>
+    <h1>Hello FIT!</h1>
+    <h2>populárně naučný úvod do studia <em>#hellofit2018</em></h2>
 </header>
+    <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc2zPwUiVeXB5NHy2g17xRP7W0YTIX0eGzfge5ltMTgXE0r-g/viewform?usp=sf_link"
+        class="main-link"
+    >Chci se dozvět o HelloFit více info!</a>
+<article>
 
-<div class="section wrapper wrapper--small">
-    @@include('./index-parts/info.html')
-</div>
+    Hello FIT! je jednodenní oficiální akce studentského klubu <a href="http://klubfitpp.cz ">FIT++</a> na půdě Fakulty
+    informačních technologií ČVUT v
+    Praze, která pomáhá novým studentům s přechodem ze střední na vysokou školu. Odehrává se v druhé polovině září a
+    účast na ni je zdarma.
+    <br/>
+    <br/>
+    Akce se skládá z denního přednáškového pásma, kde se dozvíš mnoho užitečných informací. Zjistíš, jak naplno žít
+    studentský život, jak projít úspěšně nejen prvním semestrem,
+    jak se zorientovat v novém prostředí nebo jak získat praxi přímo při studiu. Projdeš si s námi celý
+    <a href="https://www.facebook.com/KampusDejvice/ ">Kampus Dejvice</a>, ve kterém ti kromě budov ČVUT ukážeme i
+    místa, kde se lze dobře najíst, učit se nebo relaxovat. Získáš také základní znalosti do předmětů vyučovaných v
+    prvním semestru – Programování a algoritmizace 1 a Programování v shellu 1.
 
-<div class="section section--contrast">
-    @@include('./index-parts/program.html')
-</div>
+    <br/>
+    <br/>
+    Večer se koná afterpárty, kde se můžeš seznámit a pobavit s ostatními účastníky a získat tak první známosti ještě
+    před první přednáškou či cvičením.
 
-<div class="section wrapper">
-    @@include('./index-parts/speakers.html')
-</div>
+    <br/>
+    <br/>
+    Hello FIT! navazuje na akci Technokrati, kterou do roku 2016 pořádal dnes již bývalý klub
+    <a href="http://tech.su.cvut.cz ">tech@SU.</a>
+
+    <br/>
+    <br/>
+    Kromě Hello FIT! je pro nové studenty připraven i <a href="http://seznamovak.fit.cvut.cz ">Seznamovák FIT</a>.
+    <br/>
+    <br/>
+    A podívejte se, co jsme měli <a href="2017.html">připravené loni</a>.
+</article>
+
 
 <div class="section section--highlight">
-    @@include('./index-parts/fitpp.html')
+    @@include('./2017-parts/fitpp.html')
 </div>
 
 <footer class="section footer">
@@ -46,42 +65,12 @@
                 </div>
             </div>
             <div class="footer__warning">Akci Hello&nbsp;FIT! pořádá klub FIT++ nezávisle na fakultě, ale s její podporou.<br />
-            Tento web je open-source na našem <a href="https://github.com/klubFITpp/hellofit.cz" class="link" target="_blank">GitHubu</a>.</div>
+                Tento web je open-source na našem <a href="https://github.com/klubFITpp/hellofit.cz" class="link" target="_blank">GitHubu</a>.</div>
         </div>
     </div>
 </footer>
 
-@@include('./index-parts/ga.html')
+@@include('./parts/ga.html')
 
-<script>
-    function onMouseOut(event) {
-        var e = event.toElement || event.relatedTarget;
-
-        if (e !== null) {
-            if (e.parentNode === this || e === this || e.relatedTarget === this) {
-                return;
-            }
-        }
-
-        var classes = document.body.className.split(' ');
-        var idx = classes.indexOf('is--hell');
-        if (idx !== -1){
-            classes.splice(idx,1);
-        }
-        document.body.className = classes.join(' ');
-    }
-
-    function onMouseOver(event) {
-        var classes = document.body.className.split(' ');
-        if (classes.indexOf('is--hell') === -1) {
-            classes.push('is--hell');
-        }
-
-        document.body.className = classes.join(' ');
-    }
-
-    document.getElementsByClassName('hell__link')[0].addEventListener('mouseout',onMouseOut,true);
-    document.getElementsByClassName('hell__link')[0].addEventListener('mouseover',onMouseOver,true);
-</script>
 </body>
 </html>
