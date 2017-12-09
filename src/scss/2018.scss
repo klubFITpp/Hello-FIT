@@ -18,5 +18,61 @@ body {
   color: #444;
 }
 
+header {
+  display: block;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: -1;
+  background: rgba(28,56,109,1);
+  background: -moz-radial-gradient(center, circle cover, rgba(28,56,109,1) 0%, rgba(41,36,94,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(28,56,109,1)), color-stop(100%, rgba(41,36,94,1)));
+  background: -webkit-radial-gradient(center, circle cover, rgba(28,56,109,1) 0%, rgba(41,36,94,1) 100%);
+  background: -o-radial-gradient(center, circle cover, rgba(28,56,109,1) 0%, rgba(41,36,94,1) 100%);
+  background: -ms-radial-gradient(center, circle cover, rgba(28,56,109,1) 0%, rgba(41,36,94,1) 100%);
+  background: radial-gradient(circle at center, rgba(28,56,109,1) 0%, rgba(41,36,94,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c386d', endColorstr='#29245e', GradientType=1 );
+  color: #FEFCFA;
+
+  h1 {
+    font-size: 120px;
+    margin: 0;
+    padding: 70px 0;
+    text-transform: uppercase;
+  }
+}
+
+article {
+  max-width: 900px;
+  margin: 10px auto;
+  text-align: justify;
+  padding: 20px;
+}
+
+body {
+
+  text-align: center;
+
+}
+
+.main-link {
+  padding: 20px 30px;
+  display: inline-block;
+  margin: 40px auto;
+  text-decoration: none;
+  color: inherit;
+  background-color: #CCC;
+
+}
+
 @import 'normalize';
 @import '2018/footer';
+
+
+@import '2017/fontello';
+@import '2017/text';
+@import '2017/wrapper';
+@import '2017/section';
+@import '2017/footer';
