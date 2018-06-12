@@ -1,0 +1,317 @@
+@import "scss/_reset.sass";
+$main-blue: #1174BA;
+$phone: "only screen and (max-width : 620px)";
+html {
+    box-sizing: border-box;
+    font-family: "europa", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.widthWrap {
+    max-width: 1920px;
+    padding: 0 57px;
+    margin: auto; 
+    @media #{$phone} {
+        padding: 0 27px;
+    }
+}
+
+.innerWrap {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.invisible-link {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.1s;
+    border-bottom: 1px solid;
+    border-color: transparent;
+    line-height: 0.9;
+    display: inline-block;
+    &:hover {
+        border-color: inherit;
+    }
+}
+
+a.nice-link {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.2s;
+    border-bottom: 1px solid;
+    line-height: 0.9;
+    border-color: inherit;
+    display: inline-block;
+    &:hover {
+        border-color: transparent;
+    }
+}
+
+nav#main-nav {
+    height: 65px;
+    background-color: $main-blue;
+    color: white;
+    img#logo {
+        width: 84px;
+        margin: 14px 0;
+        display: inline-block;
+    }
+    ul {
+        float: right;
+        li {
+            display: inline-block;
+            list-style-type: none;
+            a {
+                display: inline-block;
+                color: inherit;
+                text-decoration: none;
+                padding: 22px 30px;
+                font-size: 22px;
+                font-weight: 200;
+                letter-spacing: 0.7px;
+                &:last-child {
+                    padding-right: 0;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+header {
+    height: 1010px;
+    @media #{$phone} {
+        height: 500px;
+    }
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url('img/uvod.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    h1 {
+        font-size: 114px;
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        font-weight: 600;
+        margin-top: -205px;
+        width: 100%;
+        letter-spacing: 1.6px;
+        @media #{$phone} {
+            font-size: 70px;
+        }
+    }
+    #date {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        margin-top: -58px;
+        font-size: 52px;
+        @media #{$phone} {
+            font-size: 26px;
+            margin-top: -108px;
+        }
+        letter-spacing: 0.5px;
+    }
+    #place {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        margin-top: 2px;
+        font-size: 41px;
+        @media #{$phone} {
+            font-size: 22px;
+            margin-top: -70px;
+        }
+        letter-spacing: 0.4px;
+        line-height: 1.4;
+    } // a.button1 {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     width: 308px;
+    //     margin-left: -154px;
+    //     margin-top: 99px;
+    // }
+    #header-buttons {
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        margin-top: 130px;
+        @media #{$phone} {
+            margin-top: 20px;
+        }
+    }
+}
+
+main {
+    article {
+        padding: 93px 40px 25px;
+        font-size: 30px;
+        @media #{$phone} {
+            font-size: 22px;
+            padding: 93px 0px 25px;
+        }
+        p {
+            line-height: 1.3;
+            font-weight: 100;
+            margin-bottom: 60px;
+            @media #{$phone} {
+                text-align: justify
+            }
+            a {
+                @extend .nice-link;
+            }
+        }
+        em {
+            font-weight: 800;
+        }
+        &:nth-child(2n+1) {
+            background-color: $main-blue;
+            color: #FFFFFF;
+            h2 {
+                color: #FFFFFF;
+            }
+        }
+    }
+    h2 {
+        font-size: 60px;
+        letter-spacing: 0.03em;
+        margin-bottom: 32px;
+        color: $main-blue;
+    }
+}
+
+.button1 {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 17px 37px;
+    text-transform: uppercase;
+    border: 5px solid #FFFFFF;
+    font-weight: 600;
+    font-size: 37px;
+    letter-spacing: 2.2px;
+    transition: 0.2s;
+    margin: 10px 20px;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+#prohlaseni p {
+    text-align: center;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+ul.linear-list-with-slash {
+    li {
+        display: inline-block;
+        &::after {
+            content: '/';
+            position: relative;
+            right: -5px;
+        }
+        &:last-child::after {
+            display: none;
+        }
+        a {
+            @extend .nice-link;
+            border-bottom-width: 2px;
+            padding: 0 3px;
+        }
+    }
+}
+
+footer {
+    padding: 97px 0 90px;
+    color: $main-blue;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    line-height: 1.21;
+    border-top: 10px solid $main-blue;
+    img.footer-logo {
+        width: 155px;
+        margin-bottom: 20px;
+    }
+}
+
+.contact-boxes-wrapper {
+    text-align: center;
+}
+
+.contact-box {
+    display: inline-block;
+    overflow: hidden;
+    min-width: 200px;
+    width: 32%;
+    min-width: 450px;
+    padding: 0 30px;
+    height: 550px;
+    @media #{$phone} {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    &--photo {
+        width: 160px;
+        height: 160px;
+        margin: 10px;
+        border-radius: 50%;
+    }
+    &--link-icons {
+        margin-bottom: 6px;
+        &--icon {
+            display: inline-block;
+            text-decoration: none;
+            width: 42px;
+            padding: 5px;
+            color: inherit;
+            transition: 0.2s;
+            img,
+            svg {
+                width: 100%;
+                fill: currentColor;
+            }
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    h3 {
+        margin: 10px 0 0;
+        letter-spacing: 0.04em;
+        font-size: 29px;
+    }
+    &--bio {
+        font-size: 20px;
+        line-height: 1.3;
+        font-weight: 200;
+    }
+}

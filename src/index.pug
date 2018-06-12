@@ -1,0 +1,136 @@
+- var mainMenu = [{"label": "O akci","link": "#o-akci" },{"label": "Program","link": "#program" }, {"label": "Organizátoři","link": "#organizatori" }]
+
+//- {"label": "Organizátoři","link": "#organizatori" }
+//- {"label": "Přednášející","link": "#prednasejici" }
+
+
+doctype html
+html.no-js(lang="")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        title Hello FIT! 2018
+        meta(name="description" content="")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(href="img/fitpp_white.png" rel="apple-touch-icon")
+        link(href='img/fitpp_sqr.png' rel='icon')
+        meta(name="theme-color" content="#1174BA")
+
+        link(type="text/css" href="https://use.typekit.net/qlg5ujf.css" rel="stylesheet")
+
+    body
+        //
+            [if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]
+
+        nav#main-nav
+            div.widthWrap
+                a(data-scroll href="#header")
+                    img#logo(src="img/fitpp_white.png")
+                ul
+                    each item in mainMenu
+                        li
+                            a(href=item.link)=item.label
+            
+        header#header
+            h1 Hello FIT!
+            time#date 27. září 2018 od 9:00
+            #place Fakulta informačních technologií ČVUT (Nová budova ČVUT)
+
+            #header-buttons
+                a.button1(href="https://goo.gl/forms/N76591VejVrolX7p2" target="_blank") Registrace
+                a.button1(href="https://www.facebook.com/events/169537793734664/" target="_blank") FB Událost
+
+        main
+            article#o-akci
+                .widthWrap
+                    h2 O akci
+                    p Nastupuješ do prvního ročníku bakalářského studia na FIT ČVUT? V tom případě je Hello FIT! akce přímo pro tebe. 
+                    p Hello FIT! je jednodenní populárně naučný úvod do studia, který ti pomůže s přechodem ze střední školy na FIT. Čekají tě zajímavé a užitečné přednášky, workshopy, prohlídky prostor (nejen) fakulty a v neposlední řadě také večerní afterpárty.
+                    p Hello FIT! je nástupcem akce Technokrati, kterou až do roku 2016 pořádal dnes již bývalý klub tech@SU. 
+                    p Pokud se chceš seznámit se svými budoucími spolužáky ještě dříve před Hello FIT!, doporučujeme jet na spřízněnou akci 
+                        a(href="http://seznamovak.fit.cvut.cz" target="_blank") Seznamovák FIT.
+
+            article#program
+                .widthWrap
+                    h2 Program
+                    p Přesný program pro tebe momentálně usilovně připravujeme, avšak už teď se můžeš těšit na následující přednášky.
+                    p V přednášce <em>Michale, musíme vymyslet nějaký dobrý název</em> se dozvíš, jaké budou vaše první dny v kůži vysokoškoláka a jak projít (nejen) prvním semestrem. Rady a tipy, které se ti prostě budou hodit. 
+                    p Následovně pečlivě <em>projdeme celý Kampus Dejvice</em>, aby ti bylo jasné, kde je co za fakultu, koleje, kam si můžeš zajít do menzy či do restaurace a podobně. Díky této prohlídce se už v kampusu neztratíš.
+                    p Protože studentský život není jen usilovné studium, <em>představíme ti Studentskou unii ČVUT </em> a její kluby – ať už kolejní, tak i zájmové. Láká tě například správa serverů na Strahově, kde bydlí přes 4000 lidí? Nebo se chceš podívat na různá místa v zahraničí a ještě se přitom něco naučit? To vše je v rámci Studentské unie ČVUT možné.
+                    p Prozradíme ti informace o <em>spolupráci s průmyslem</em> aneb jak získat praxi již při studiu a nenechat se prací omezovat ve studiu. 
+                    p Poznáš sdružení <em>CESNET</em>, které ti představí široké portfolium zajímavých služeb, které pro studenty nabízí a dost současných studentů ani o nich dosud neví! 
+                    p Zúčastníš se <em>interaktivních přednášek</em> od Katedry aplikované matematiky i Davida Bernhauera, kde zjistíš, jak vlastně funguje počítač a jak jít správně na algoritmus.
+                    p Protože po celém dni budeš mít zajisté mnoho otázek, tak přednáškovou část Hello FIT! uzavřeme <em>panelovou diskuzí s absolventy i současnými studenty</em>, kde se budeš moci zeptat úplně na všechno.
+                    p A pak už nám zbývá jen <em>afterpárty</em>, kde si u pivka či Kofoly budeš moci popovídat se svými novými spolužáky. 
+
+            article#organizatori
+                .widthWrap
+                    h2 Organizátoři
+
+                    .contact-boxes-wrapper
+                        .contact-box
+                            img.contact-box--photo(src="img/contacts/milan-kurka.jpg" alt="Milan Kurka")
+                            h3 Milan Kurka
+                            .contact-box--link-icons
+                                a.contact-box--link-icons--icon(href="https://facebook.com/kurkamil" target="_blank")
+                                    img(src="img/icons/facebook-box.svg" alt="facebook" inline)
+                                a.contact-box--link-icons--icon(href="https://twitter.com/MilanKurka" target="_blank") 
+                                    img(src="img/icons/twitter.svg" alt="twitter" inline)
+                                a.contact-box--link-icons--icon(href="mailto:milan.kurka@fit.cvut.cz" target="_blank") 
+                                    img(src="img/icons/email-outline.svg" alt="e-mail" inline)
+                            p.contact-box--bio Milan je student bakalářského studijního programu na FITu, k tomu stíhá na fakultě hned několik aktivit. Je redaktorem fakultního časopisu Buď FIT, organizuje Seznamovák a další drobné akce. Prsty má však i v několika dalších akcích a projektech v klubech Studentské unie ČVUT. Ve volném čase se zajímá o grafický design, tvorbu videí, programování a nová média.
+
+                        .contact-box
+                            img.contact-box--photo(src="img/contacts/michal-hosna.jpg" alt="Michal Hošna")
+                            h3 Michal Hošna
+                            .contact-box--link-icons
+                                a.contact-box--link-icons--icon(href="https://facebook.com/michalhosna" target="_blank")
+                                    img(src="img/icons/facebook-box.svg" alt="facebook" inline)
+                                a.contact-box--link-icons--icon(href="https://twitter.com/michalhosna" target="_blank")
+                                    img(src="img/icons/twitter.svg" alt="twitter" inline)
+                                a.contact-box--link-icons--icon(href="mailto:mh@michalhosna.com" target="_blank")
+                                    img(src="img/icons/email-outline.svg" alt="e-mail" inline)
+                            p.contact-box--bio Michal je mistr v neustálem zacyklováním Milana. Hned po pivu a jeho drahé polovičce je to jeho třetí oblíbená činnost. Nic nestíhá, a to i přesto že už se prakticky vzdal spánku i studia, nestíhá ani tenhle web, za což ho ostatní milují.
+
+
+                        .contact-box
+                            img.contact-box--photo(src="img/contacts/jaroslav-kriz.jpg" alt="Jaroslav Kříž")
+                            h3 Jaroslav Kříž
+                            .contact-box--link-icons
+                                a.contact-box--link-icons--icon(href="https://facebook.com/krizjar5" target="_blank")
+                                    img(src="img/icons/facebook-box.svg" alt="facebook" inline)
+                                a.contact-box--link-icons--icon(href="https://twitter.com/krizjar5" target="_blank") 
+                                    img(src="img/icons/twitter.svg" alt="twitter" inline)
+                                a.contact-box--link-icons--icon(href="mailto:krizjar5@fit.cvut.cz" target="_blank") 
+                                    img(src="img/icons/email-outline.svg" alt="e-mail" inline)                                   
+                            p.contact-box--bio Jarda je člověk, který neřekne ne na žádnou akci. Takže ho uvidíš organizovat spoustu akcí v rámci fakulty, mimo ní a dokonce i FIT++. A pokud shodou okolností neorganizuje, na té akci se stejně potuluje. Poměrně úspěšně studuje bakaláře a neodmítne pozvání na Kofolu. Nebo Malinovku. To záleží. Snaží se věnovat i karate.
+
+            article#prohlaseni
+                .widthWrap
+                    p Akce je organizována klubem FIT++ za podpory Fakulty informačních technologií ČVUT v Praze.
+
+
+        footer
+            .widthWrap
+                .innerWrap
+                    img.footer-logo(src="img/fitpp.png" alt="FIT++")
+                    ul
+                        li.strong FIT++, zájový klub Studentské unie ČVUT
+                        li Thákurova 9, 160 00 Praha 6
+                        li email: 
+                            a(href="mailto:fitpp@su.cvut.cz").invisible-link fitpp@su.cvut.cz
+                        li
+                            ul.linear-list-with-slash
+                                li 
+                                    a(href="https://fb.com/klubfitpp" target="_blank") Facebook
+                                li
+                                    a(href="http://twitter.com/klubFITpp" target="_blank") Twitter
+                                li
+                                    a(href="https://www.instagram.com/klubfitpp" target="_blank") Instagram
+                                li
+                                    a(href="https://klubfitpp.cz" target="_blank") Web
+                                li
+                                    a(href="https://gitlab.com/klubfitpp/hellofitcz_2018" target="_blank") Git
+                                li #hellofit2018
