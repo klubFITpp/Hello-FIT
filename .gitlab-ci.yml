@@ -1,0 +1,22 @@
+image: node:9.11-alpine
+
+cache:
+  paths:
+  - node_modules
+
+pages:
+  before_script:
+    - apk add --update  make gcc g++ python 
+    - apk add vips-dev fftw-dev --update-cache --repository https://dl-3.alpinelinux.org/alpine/edge/testing/
+    - npm install 
+
+  script: 
+    - npm run-script build
+    - mv dist public
+  
+  artifacts:
+    paths:
+      - public
+
+  only: 
+    - master
