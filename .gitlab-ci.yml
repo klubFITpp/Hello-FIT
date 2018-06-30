@@ -1,12 +1,10 @@
-image: node:9.11-alpine
+image: registry.gitlab.com/klubfitpp/hellofitcz_2018/webpack_ci_builder:1530372242
 
 cache:
   paths:
   - node_modules
 
 before_script:
-  - apk add --update  make gcc g++ python 
-  - apk add vips-dev fftw-dev --update-cache --repository https://dl-3.alpinelinux.org/alpine/edge/testing/
   - npm install 
 
 .jobBase: &jobBase
@@ -18,7 +16,13 @@ before_script:
     paths:
       - public
 
-test:
+prettier:
+  stage: test
+
+  script:
+    - npm run-script prettier-check
+
+pages-test:
   <<: *jobBase
   stage: test
   except:
