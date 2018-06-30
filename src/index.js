@@ -1,4 +1,4 @@
-import SmoothScroll from './js/smooth-scroll.js';
+import SmoothScroll from "./js/smooth-scroll.js";
 var scroll = new SmoothScroll('a[href*="#"]');
 
-import './img/fitpp_sqr.png';
+import "./img/fitpp_sqr.png";

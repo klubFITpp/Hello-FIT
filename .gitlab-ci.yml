@@ -16,7 +16,13 @@ before_script:
     paths:
       - public
 
-test:
+prettier:
+  stage: test
+
+  script:
+    - npm run-script prettier-check
+
+pages-test:
   <<: *jobBase
   stage: test
   except:

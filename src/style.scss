@@ -1,5 +1,5 @@
 @import "scss/_reset.sass";
-$main-blue: #1174BA;
+$main-blue: #1174ba;
 $phone: "only screen and (max-width : 620px)";
 html {
     box-sizing: border-box;
@@ -15,7 +15,7 @@ html {
 .widthWrap {
     max-width: 1920px;
     padding: 0 57px;
-    margin: auto; 
+    margin: auto;
     @media #{$phone} {
         padding: 0 27px;
     }
@@ -90,11 +90,11 @@ header {
     @media #{$phone} {
         height: 500px;
     }
-    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url('img/uvod.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url("img/uvod.jpg");
     background-size: cover;
     background-position: center;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     position: relative;
     h1 {
@@ -179,7 +179,7 @@ main {
             font-weight: 100;
             margin-bottom: 60px;
             @media #{$phone} {
-                text-align: justify
+                text-align: justify;
             }
             a {
                 @extend .nice-link;
@@ -188,11 +188,11 @@ main {
         em {
             font-weight: 800;
         }
-        &:nth-child(2n+1) {
+        &:nth-child(2n + 1) {
             background-color: $main-blue;
-            color: #FFFFFF;
+            color: #ffffff;
             h2 {
-                color: #FFFFFF;
+                color: #ffffff;
             }
         }
     }
@@ -210,7 +210,7 @@ main {
     display: inline-block;
     padding: 17px 37px;
     text-transform: uppercase;
-    border: 5px solid #FFFFFF;
+    border: 5px solid #ffffff;
     font-weight: 600;
     font-size: 37px;
     letter-spacing: 2.2px;
@@ -233,7 +233,7 @@ ul.linear-list-with-slash {
     li {
         display: inline-block;
         &::after {
-            content: '/';
+            content: "/";
             position: relative;
             right: -5px;
         }
