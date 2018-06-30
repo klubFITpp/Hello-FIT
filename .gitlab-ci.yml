@@ -4,12 +4,12 @@ cache:
   paths:
   - node_modules
 
-pages:
-  before_script:
-    - apk add --update  make gcc g++ python 
-    - apk add vips-dev fftw-dev --update-cache --repository https://dl-3.alpinelinux.org/alpine/edge/testing/
-    - npm install 
+before_script:
+  - apk add --update  make gcc g++ python 
+  - apk add vips-dev fftw-dev --update-cache --repository https://dl-3.alpinelinux.org/alpine/edge/testing/
+  - npm install 
 
+.jobBase: &jobBase
   script: 
     - npm run-script build
     - mv dist public
@@ -18,5 +18,15 @@ pages:
     paths:
       - public
 
+test:
+  <<: *jobBase
+  stage: test
+  except:
+    - master
+
+pages:
+  <<: *jobBase
+  stage: deploy
   only: 
     - master
+    
