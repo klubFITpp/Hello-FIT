@@ -1,0 +1,65 @@
+@import "_variables.scss";
+
+.program-item {
+    display: block;
+    position: relative;
+    padding-left: 174px;
+    margin-bottom: 55px;
+
+    @media #{$phone1000} {
+        padding-left: 0;
+        padding-top: 60px;
+    }
+
+    @media #{$phone} {
+        padding-top: 50px;
+    }
+
+    h3 {
+        font-size: 34px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+
+        @media #{$phone} {
+            font-size: 28px;
+        }
+    }
+
+    &--time {
+        display: inline-block;
+        background-color: $main-blue;
+        color: white;
+        width: 140px;
+        height: 55px;
+        padding: 10px 5px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @media #{$phone} {
+            height: 50px;
+        }
+    }
+
+    &--title {
+        display: inline-block;
+        padding: 10px 0;
+        margin-right: 10px;
+        color: $main-blue;
+    }
+
+    &--host {
+        display: inline-block;
+        color: $lighter-blue;
+        position: relative;
+        padding: 0 0 10px 30px;
+        line-height: 1.34;
+
+        &::before {
+            content: "|";
+            position: absolute;
+            left: 0;
+        }
+    }
+}

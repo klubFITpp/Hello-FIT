@@ -1,6 +1,7 @@
 @import "scss/_reset.sass";
-$main-blue: #1174ba;
-$phone: "only screen and (max-width : 620px)";
+@import "scss/_program.scss";
+@import "scss/_variables.scss";
+
 html {
     box-sizing: border-box;
     font-family: "europa", sans-serif;
