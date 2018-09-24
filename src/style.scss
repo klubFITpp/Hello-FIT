@@ -16,9 +16,14 @@ html {
 .widthWrap {
     max-width: 1920px;
     padding: 0 57px;
+    overflow: hidden;
     margin: auto;
     @media #{$phone} {
         padding: 0 27px;
+    }
+
+    @media #{$small-phone} {
+        padding: 0 10px;
     }
 }
 
@@ -168,6 +173,10 @@ header {
     }
 }
 
+body {
+    min-width: 350px;
+}
+
 main {
     article {
         padding: 93px 40px 25px;
@@ -203,6 +212,15 @@ main {
         letter-spacing: 0.03em;
         margin-bottom: 32px;
         color: $main-blue;
+
+        @media #{$phone} {
+            font-size: 40px;
+        }
+
+        @media #{$small-phone} {
+            font-size: 40px;
+            text-align: center;
+        }
     }
 }
 
@@ -220,6 +238,12 @@ main {
     margin: 10px 20px;
     &:hover {
         background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    @media #{$phone} {
+        padding: 13px 25px;
+        font-size: 30px;
+        font-weight: 400;
     }
 }
 
