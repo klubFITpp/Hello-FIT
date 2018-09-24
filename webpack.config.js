@@ -45,7 +45,7 @@ var config = function (env, argv) {
         module: {
             rules: [{
                     test: /\.pug$/,
-                    use: ['html-loader', 'pug-html-loader?pretty&exports=false']
+                    use: ['pug-loader']
                 },
                 {
                     test: /\.scss$/,
