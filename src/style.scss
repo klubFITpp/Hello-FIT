@@ -96,7 +96,7 @@ header {
     @media #{$phone} {
         height: 500px;
     }
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
         url("img/uvod.jpg");
     background-size: cover;
     background-position: center;
@@ -269,10 +269,23 @@ main {
 ul.linear-list-with-slash {
     li {
         display: inline-block;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 2px 5px;
+
+        &:first-child {
+            margin-left: 0;
+            padding-left: 0;
+
+            a {
+                padding-left: 0;
+            }
+        }
+
         &::after {
             content: "/";
             position: relative;
-            right: -5px;
+            right: -8px;
         }
         &:last-child::after {
             display: none;
@@ -280,7 +293,6 @@ ul.linear-list-with-slash {
         a {
             @extend .nice-link;
             border-bottom-width: 2px;
-            padding: 0 3px;
         }
     }
 }
