@@ -177,6 +177,17 @@ body {
     min-width: 350px;
 }
 
+.infoBanner {
+    font-size: 30px;
+    padding: 25px 40px;
+    line-height: 1.43;
+    background-color: #fff90d;
+    @media #{$phone} {
+        font-size: 22px;
+        padding: 25px 0px;
+    }
+}
+
 main {
     article {
         padding: 93px 40px 25px;
