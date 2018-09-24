@@ -146,7 +146,8 @@ header {
         }
         letter-spacing: 0.4px;
         line-height: 1.4;
-    } // a.button1 {
+    }
+    // a.button1 {
     //     position: absolute;
     //     top: 50%;
     //     left: 50%;
@@ -264,27 +265,38 @@ footer {
 
 .contact-boxes-wrapper {
     text-align: center;
+    font-size: 0;
 }
 
 .contact-box {
     display: inline-block;
     overflow: hidden;
-    min-width: 200px;
-    width: 32%;
-    min-width: 450px;
+    width: 450px;
     padding: 0 30px;
-    height: 550px;
+    height: 600px;
+
+    @media only screen and (max-width: 1080px) {
+        height: auto;
+    }
+
     @media #{$phone} {
         width: 100%;
         min-width: 100%;
-        height: auto;
         padding: 0;
     }
-    &--photo {
+
+    &--photo-wrapper {
         width: 160px;
         height: 160px;
         margin: 10px;
         border-radius: 50%;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        img {
+            width: inherit;
+            height: auto;
+        }
     }
     &--link-icons {
         margin-bottom: 6px;
