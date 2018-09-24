@@ -23,7 +23,7 @@ html.no-js(lang="")
         nav#main-nav
             div.widthWrap
                 a(data-scroll href="#header")
-                    img#logo(src="img/fitpp_white.png")
+                    img#logo(src=require("./img/fitpp_white.png"))
                 ul
                     each item in mainMenu
                         li
@@ -284,7 +284,7 @@ html.no-js(lang="")
         footer
             .widthWrap
                 .innerWrap
-                    img.footer-logo(src="img/fitpp.png" alt="FIT++")
+                    img.footer-logo(src=require("./img/fitpp.png") alt="FIT++")
                     ul
                         li.strong FIT++, zájmový klub Studentské unie ČVUT
                         li Thákurova 9, 160 00 Praha 6
