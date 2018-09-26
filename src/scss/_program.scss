@@ -23,6 +23,10 @@
         @media #{$phone} {
             font-size: 28px;
         }
+
+        @media #{$small-phone} {
+            font-size: 23px;
+        }
     }
 
     &--time {
@@ -39,6 +43,10 @@
 
         @media #{$phone} {
             height: 50px;
+        }
+
+        @media #{$small-phone} {
+            height: 43px;
         }
     }
 
