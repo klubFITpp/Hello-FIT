@@ -1,4 +1,4 @@
-- var mainMenu = [{"label": "O akci","link": "#o-akci" },{"label": "Program","link": "#program" }, {"label": "Organizátoři","link": "#organizatori" }, {"label": "Přednášející","link": "#prednasejici" }]
+- var mainMenu = [{"label": "O akci","link": "#o-akci" },{"label": "Program","link": "#program" }, {"label": "Organizátoři","link": "#organizatori" }, {"label": "Přednášející","link": "#prednasejici" }, {"label": "STREAM","link": "https://www.youtube.com/watch?v=zWP8HykZhrI" }]
 
 doctype html
 html.no-js(lang="")
@@ -36,11 +36,12 @@ html.no-js(lang="")
             #place Fakulta informačních technologií ČVUT (Nová budova ČVUT)
 
             #header-buttons
+                a.button1(href="https://www.youtube.com/watch?v=zWP8HykZhrI" target="_blank") Stream
                 a.button1(href="https://www.facebook.com/events/169537793734664/" target="_blank") FB Událost
 
         .infoBanner
             .widthWrap
-                p Kapacita Hello FIT! 2018 je již naplněna, registrace již nebude možná. Pro nezaregistrované zájemce bude připraven stream z akce – odkaz naleznete v den konání akce na těchto stránkách.
+                p Kapacita Hello FIT! 2018 je již naplněna, registrace již nebude možná. Pro nezaregistrované zájemce je připraven stream z akce.
 
         main
             article#o-akci
@@ -201,17 +202,6 @@ html.no-js(lang="")
                                 a.contact-box--link-icons--icon(href="mailto:petr.hodac@fit.cvut.cz" target="_blank")
                                     img(src=require("./img/icons/email-outline.svg") alt="e-mail" inline)
                             p.contact-box--bio Hody pracuje na fakultě jako sysadmin a učí předmět BI-PS1. Také je hlavním organizátorem největší české konference zaměřené na Linux a opensource technologie s názvem LinuxDays. Je stále aktivní na Strahovských kolejích v AVC SH a hackerspace Batlírna.
-
-                        .contact-box
-                            .contact-box--photo-wrapper
-                                img(src=require("advanced-image-loader!./img/contacts/karel-klouda.jpg?width=200&quality=80")['src'] alt="Karel Klouda")
-                            h3 Karel Klouda
-                            .contact-box--link-icons
-                                a.contact-box--link-icons--icon(href="https://twitter.com/KarelKloud" target="_blank")
-                                    img(src=require("./img/icons/twitter.svg") alt="twitter" inline)
-                                a.contact-box--link-icons--icon(href="mailto:karel.klouda@fit.cvut.cz" target="_blank")
-                                    img(src=require("./img/icons/email-outline.svg") alt="e-mail" inline)
-                            p.contact-box--bio Karel je vyučujícím na FITu, kde vyučuje zejména matematické předměty a předměty oboru Znalostní inženýrství. Když nevyučuje, vede Katedru aplikované matematiky, píše maily a podepisuje různé papíry. Ve zbylém čase se věnuje bádání v oblastech kombinatoriky a statistiky.
 
                         .contact-box
                             .contact-box--photo-wrapper
