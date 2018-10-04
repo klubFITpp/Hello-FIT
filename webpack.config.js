@@ -64,7 +64,7 @@ var config = function (env, argv) {
                     }]
                 },
                 {
-                    test: /\.(gif|svg|png)$/,
+                    test: /\.(gif|svg|png|pdf|pptx)$/,
                     loader: 'file-loader',
                     options: {
                         name: '[path][name].[ext]'
