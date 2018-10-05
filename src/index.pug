@@ -36,14 +36,17 @@ html.no-js(lang="")
             #place Fakulta informačních technologií ČVUT (Nová budova ČVUT)
 
             #header-buttons
-                a.button1(href="https://www.youtube.com/watch?v=zWP8HykZhrI" target="_blank") Stream
+                a.button1(href="https://www.youtube.com/watch?v=zWP8HykZhrI" target="_blank") Záznam
                 a.button1(href="https://www.facebook.com/events/169537793734664/" target="_blank") FB Událost
 
-        .infoBanner
-            .widthWrap
-                p Kapacita Hello FIT! 2018 je již naplněna, registrace již nebude možná. Pro nezaregistrované zájemce je připraven stream z akce.
-
         main
+
+            article#o-akci
+                .widthWrap
+                    h2 O akci
+                    p Hello FIT! je jednodenní populárně naučný úvod do studia, který ti pomůže s přechodem ze střední školy na FIT. Čekají tě zajímavé a užitečné přednášky, workshopy, prohlídky prostor (nejen) fakulty a v neposlední řadě také večerní afterpárty.
+                    p Hello FIT! je nástupcem akce Technokrati, kterou až do roku 2016 pořádal dnes již bývalý klub tech@SU.
+                    p Pro prváky připravují studenti a zaměstnanci FIT také spřízněnou akci #[a(href="http://seznamovak.fit.cvut.cz" target="_blank") Seznamovák FIT].
 
             article#program
                 .widthWrap
@@ -62,7 +65,9 @@ html.no-js(lang="")
                             .program-item--title Michale, musíme vymyslet nějaký dobrý název :)
                             .program-item--host Milan Kurka, Michal Hošna
                         p.program-item--excerpt I přes vskutku kreativní název přednášky se zde dozvíš, jaké budou tvé první dny na vysoké škole, jak projít (nejen) prvním semestrem a co je prostě třeba vědět. Dozvíš se i informace, na které při Dni otevřených dveří či jiných akcích nezbyl čas, nebo se neříkaly.
-
+                        ul.program-item--links
+                            li
+                                a(href=require("./files/slides/01-Michale-musime-vymyslet-nejaky-dobry-nazev.pdf")) Prezentace (PDF)
 
                     .program-item
                         h3
@@ -79,14 +84,30 @@ html.no-js(lang="")
                                 ul
                                     li Honza Mára (Studentská unie  ČVUT),
                                     li Milan Kurka (FIT++),
-                                    li #[del Václav Pužman a Jiří Hanuš] (Silicon Hill),
+                                    li Vít Pekářek a Michal Kothera (Silicon Hill),
                                     li Michal Štádler (International Student Club),
                                     li Ondřej Skořepa (Klub Čajovna),
                                     li Pavel Čermák (IAESTE),
                                     li Petr Pulc a Vladimír Proton Petráš (AVC ČVUT),
                                     li dále zástupce klubu BEST Prague
                         p.program-item--excerpt ČVUT není jen studium, ale také mnoho volnočasových a studentských aktivit. Drtivou většinu z nich zajišťuje Studentská unie ČVUT, která zastřešuje přes 20 kolejních a zájmových klubů. Chceš pomoci na FITu, vycestovat do zahraničí nebo spravovat síť, na které je připojeno přes 4000 lidí? V tom případě je SU přímo pro tebe.
-
+                        ul.program-item--links
+                            li
+                                a(href=require("./files/slides/02-su-cvut.pdf")) SU ČVUT (PDF)
+                            li
+                                a(href=require("./files/slides/02-su-cvut.pptx")) SU ČVUT (PPTX)
+                            li
+                                a(href=require("./files/slides/03-Silicon-Hill.pdf")) Silicon Hill (PDF)
+                            li
+                                a(href=require("./files/slides/04-IAESTE.pdf")) IAESTE (PDF)
+                            li
+                                a(href=require("./files/slides/05-Best.pptx")) BEST (PPTX)
+                            li
+                                a(href=require("./files/slides/05-Best.pdf")) BEST (PDF)
+                            li
+                                a(href=require("./files/slides/06-AVC-CVUT.pdf")) AVC ČVUT (PDF)
+                            li
+                                a(href=require("./files/slides/07-ISC.pdf")) ISC (PDF)
 
 
                     .program-item
@@ -95,7 +116,9 @@ html.no-js(lang="")
                             .program-item--title SSP aneb jak získat praxi při studiu
                             .program-item--host Tomáš Borovička
                         p.program-item--excerpt Jak získat placenou praxi již při studiu? I na to se na #FITCVUT myslí – představíme ti Spolupráci s průmyslem a její možnosti.
-
+                        ul.program-item--links
+                            li
+                                a(href=require("./files/slides/08-SSP.pdf")) Prezentace (PDF)
 
                     .program-item
                         h3
@@ -103,7 +126,11 @@ html.no-js(lang="")
                             .program-item--title CESNET? CESNET!
                             .program-item--host Daniel Lattner
                         p.program-item--excerpt CESNET není jen Eduroam a internet, ale nabízí také mnoho zajímavých projektů a služeb, které jsou pro studenty zdarma a budou se ti hodit.
-
+                        ul.program-item--links
+                            li
+                                a(href=require("./files/slides/09-CESNET.pptx")) Prezentace (PPTX)
+                            li
+                                a(href=require("./files/slides/09-CESNET.pdf")) Prezentace (PDF)
 
                     .program-item
                         h3
@@ -111,6 +138,9 @@ html.no-js(lang="")
                             .program-item--title Hello Apakrychle!
                             .program-item--host Tomáš Nováček
                         p.program-item--excerpt Co je sakra ta Apakrychle, na kterou jsme se vás ptali v registračním formuláři?
+                        ul.program-item--links
+                            li
+                                a(href=require("./files/slides/10-Hello-Apakrychle.pdf")) Prezentace (PDF)
 
 
                     .program-item
@@ -119,6 +149,9 @@ html.no-js(lang="")
                             .program-item--title Co je to matematika?
                             .program-item--host Tomáš Kalvoda, Daniel Dombek, #[del Karel Klouda]
                         p.program-item--excerpt Co je to matematika? Co je to středoškolská matematika? Mají něco společného? Proč je přechod ze středních škol na FIT pro řadu studentů a studentek (nejen) matematických předmětů problematický? Jak se na tento přechod dobře připravit a jak jej zvládnout? Na všechny tyto otázky se pokusíme odpovědět v naší přednášce!
+                        ul.program-item--links
+                            li
+                                a(href=require("./files/slides/11-Co-je-matematika.pdf")) Prezentace (PDF)
 
 
                     .program-item
@@ -271,13 +304,6 @@ html.no-js(lang="")
                                 a.contact-box--link-icons--icon(href="mailto:lattner@cesnet.cz" target="_blank")
                                     img(src=require("./img/icons/email-outline.svg") alt="e-mail" inline)
                             p.contact-box--bio Daniel Lattner pracuje ve sdružení CESNET v oddělení komunikace a péče o uživatele. Má na starosti komunikaci se členy sdružení a připojenými organizacemi. Dříve pracoval jako krizový a projektový manager na řadě projektů v komerčním sektoru i ve státní správě. Je absolventem Univerzity Palackého v Olomouci.
-
-            article#o-akci
-                .widthWrap
-                    h2 O akci
-                    p Hello FIT! je jednodenní populárně naučný úvod do studia, který ti pomůže s přechodem ze střední školy na FIT. Čekají tě zajímavé a užitečné přednášky, workshopy, prohlídky prostor (nejen) fakulty a v neposlední řadě také večerní afterpárty.
-                    p Hello FIT! je nástupcem akce Technokrati, kterou až do roku 2016 pořádal dnes již bývalý klub tech@SU.
-                    p Pro prváky připravují studenti a zaměstnanci FIT také spřízněnou akci #[a(href="http://seznamovak.fit.cvut.cz" target="_blank") Seznamovák FIT].
 
             article#prohlaseni
                 .widthWrap

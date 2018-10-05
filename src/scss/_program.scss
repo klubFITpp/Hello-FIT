@@ -4,7 +4,7 @@
     display: block;
     position: relative;
     padding-left: 174px;
-    margin-bottom: 55px;
+    margin-bottom: 100px;
 
     @media #{$phone1000} {
         padding-left: 0;
@@ -27,6 +27,10 @@
         @media #{$small-phone} {
             font-size: 23px;
         }
+    }
+
+    &--excerpt {
+        margin-bottom: 20px;
     }
 
     &--time {
@@ -56,6 +60,62 @@
         margin-right: 10px;
         color: $main-blue;
         vertical-align: top;
+    }
+
+    &--links {
+        @extend .nice-link;
+        margin-left: -20px;
+
+        @media #{$phone} {
+            margin-left: -15px;
+        }
+
+        @media #{$small-phone} {
+            margin-left: -10px;
+        }
+
+        li {
+            font-size: 25px;
+            display: inline-block;
+            padding: 5px 20px;
+            position: relative;
+
+            @media #{$phone} {
+                font-size: 22px;
+                padding: 5px 15px;
+            }
+
+            @media #{$small-phone} {
+                font-size: 20px;
+                padding: 5px 10px;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+                transition: 0.2s;
+                margin-bottom: 2px;
+                border-bottom: 1px solid;
+                line-height: 0.9;
+                border-color: inherit;
+                display: inline-block;
+                padding-bottom: 1px;
+
+                &:hover {
+                    border-color: transparent;
+                }
+            }
+
+            &:not(:last-child)::after {
+                content: "/";
+                position: absolute;
+                right: -9px;
+
+                @media #{$phone} {
+                    right: -5px;
+                }
+            }
+        }
     }
 
     &--host {

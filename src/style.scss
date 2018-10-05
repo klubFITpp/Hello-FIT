@@ -215,7 +215,7 @@ main {
         em {
             font-weight: 800;
         }
-        &:nth-child(2n) {
+        &:nth-child(2n + 1) {
             background-color: $main-blue;
             color: #ffffff;
             h2 {
