@@ -1,0 +1,36 @@
+image: registry.gitlab.com/klubfitpp/hellofitcz_2018/webpack_ci_builder:1530372242
+
+cache:
+  paths:
+  - node_modules
+
+before_script:
+  - npm install 
+
+.jobBase: &jobBase
+  script: 
+    - npm run-script build
+    - mv dist public
+  
+  artifacts:
+    paths:
+      - public
+
+prettier:
+  stage: test
+
+  script:
+    - npm run-script prettier-check
+
+pages-test:
+  <<: *jobBase
+  stage: test
+  except:
+    - master
+
+pages:
+  <<: *jobBase
+  stage: deploy
+  only: 
+    - master
+    
