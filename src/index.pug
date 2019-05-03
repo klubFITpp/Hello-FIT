@@ -1,0 +1,69 @@
+- var mainMenu = [{"label": "O akci","link": "#o-akci" }, {"label": "2018","link": "https://2018.hellofit.cz" }]
+
+doctype html
+html.no-js(lang="")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        title Hello FIT! 2018
+        meta(name="description" content="")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(href="img/fitpp_white.png" rel="apple-touch-icon")
+        link(href='img/fitpp_sqr.png' rel='icon')
+        meta(name="theme-color" content="#1174BA")
+
+        link(type="text/css" href="https://use.typekit.net/qlg5ujf.css" rel="stylesheet")
+
+    body
+
+        nav#main-nav
+            div.widthWrap
+                a(data-scroll href="#header")
+                    img#logo(src=require("./img/fitpp_white.png"))
+                ul
+                    each item in mainMenu
+                        li
+                            a(href=item.link)=item.label
+            
+        header#header
+
+            h1 Hello FIT!
+            time#date 19. září 2019 od 10:00
+            #place Fakulta informačních technologií ČVUT (Nová budova ČVUT)
+
+        main
+
+            article#o-akci
+                .widthWrap
+                    h2 O akci
+                    p Hello FIT! je jednodenní populárně naučný úvod do studia, který ti pomůže s přechodem ze střední školy na FIT. Čekají tě zajímavé a užitečné přednášky, workshopy, prohlídky prostor (nejen) fakulty a v neposlední řadě také večerní afterpárty.
+                    p Hello FIT! je nástupcem akce Technokrati, kterou až do roku 2016 pořádal dnes již bývalý klub tech@SU.
+                    p Pro prváky připravují studenti a zaměstnanci FIT také spřízněnou akci #[a(href="http://seznamovak.fit.cvut.cz" target="_blank") Seznamovák FIT].
+
+
+            article#prohlaseni
+                .widthWrap
+                    p Akce je organizována klubem FIT++ za podpory Fakulty informačních technologií ČVUT v Praze.
+
+        footer
+            .widthWrap
+                .innerWrap
+                    img.footer-logo(src=require("./img/fitpp.png") alt="FIT++")
+                    ul
+                        li.strong FIT++, zájmový klub Studentské unie ČVUT
+                        li Thákurova 9, 160 00 Praha 6
+                        li email: 
+                            a(href="mailto:fitpp@su.cvut.cz").invisible-link fitpp@su.cvut.cz
+                        li
+                            ul.linear-list-with-slash
+                                li 
+                                    a(href="https://fb.com/klubfitpp" target="_blank") Facebook
+                                li
+                                    a(href="http://twitter.com/klubFITpp" target="_blank") Twitter
+                                li
+                                    a(href="https://www.instagram.com/klubfitpp" target="_blank") Instagram
+                                li
+                                    a(href="https://klubfitpp.cz" target="_blank") Web
+                                li
+                                    a(href="https://gitlab.com/klubfitpp/hellofitcz_2019" target="_blank") Git
+                                li #hellofit2019
