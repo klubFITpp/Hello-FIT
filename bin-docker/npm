@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+IFS=$'\n\t'
+SCRIPT=$(realpath "$0")
+DIR=$(dirname "$SCRIPT")
+PROJECT_ROOT=$(dirname $DIR)
+
+docker run \
+    --rm \
+    --interactive \
+    --tty \
+    --publish 8080:8080 \
+    --volume "$PROJECT_ROOT:$PROJECT_ROOT" \
+    --workdir="$PWD" \
+    --entrypoint=npm \
+    registry.gitlab.com/klubfitpp/hellofitcz_2018/webpack_ci_builder:1530372242 \
+    "$@"
