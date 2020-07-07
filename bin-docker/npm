@@ -10,7 +10,7 @@ docker run \
     --interactive \
     --tty \
     --publish 8080:8080 \
-    --volume "$PROJECT_ROOT:$PROJECT_ROOT" \
+    --volume "$PROJECT_ROOT:$PROJECT_ROOT:delegated" \
     --workdir="$PWD" \
     --entrypoint=npm \
     registry.gitlab.com/klubfitpp/hellofitcz_2018/webpack_ci_builder:1530372242 \
