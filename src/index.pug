@@ -1,11 +1,11 @@
-- var mainMenu = [{"label": "O akci","link": "#o-akci" }, {"label": "Program","link": "#program" }, {"label": "Minulý ročník","link": "https://2018.hellofit.cz" }, {"label": "Záznam","link": "https://www.youtube.com/watch?v=XQZvHjfpeJ8" }]
+- const mainMenu = [{"label": "O akci","link": "#o-akci" }, {"label": "Minulý ročník","link": "https://2019.hellofit.cz" }]
 
 doctype html
 html.no-js(lang="")
     head
         meta(charset="utf-8")
         meta(http-equiv="x-ua-compatible" content="ie=edge")
-        title Hello FIT! 2019
+        title Hello FIT! 2020
         meta(name="description" content="")
         meta(name="viewport", content="width=device-width, initial-scale=1")
         link(href="img/fitpp_white.png" rel="apple-touch-icon")
@@ -28,12 +28,12 @@ html.no-js(lang="")
         header#header
 
             h1 Hello FIT!
-            time#date 19. září 2019 od 10:00
-            #place Fakulta informačních technologií ČVUT (Nová budova ČVUT)
+            time#date 17. září 2020
+            #place Někde v Praze 🤷
 
-            #header-buttons
-                a.button1(href="https://www.youtube.com/playlist?list=PLQDZvJ2QkdnuiaNCDY3WjRuH7c3Ljcqb-" target="_blank") Záznam
-                a.button1(href="https://www.facebook.com/events/2339428502939852/" target="_blank") FB Událost
+            //#header-buttons
+            //    a.button1(href="https://www.youtube.com/playlist?list=PLQDZvJ2QkdnuiaNCDY3WjRuH7c3Ljcqb-" target="_blank") Záznam
+            //    a.button1(href="https://www.facebook.com/events/2339428502939852/" target="_blank") FB Událost
 
         main
 
@@ -43,98 +43,6 @@ html.no-js(lang="")
                     p Hello FIT! je jednodenní populárně naučný úvod do studia, který ti pomůže s přechodem ze střední školy na FIT. <em>Účast na akci je zdarma</em> a čekají tě zajímavé a užitečné přednášky, workshopy, prohlídky prostor (nejen) fakulty a v neposlední řadě také večerní afterpárty. 
                     p Hello FIT! je nástupcem akce Technokrati, kterou až do roku 2016 pořádal dnes již bývalý klub tech@SU.
                     p Jsou pro vás připravovány také další dvě seznamovací akce. První je oficiální seznamovák všech fakult ČVUT, #[a(href="http://seznamovak.cvut.cz" target="_blank") zaČVUTění], který pro tebe připravuje  #[a(href="http://su.cvut.cz" target="_blank") Studentská unie ČVUT]. Další akcí je #[a(href="http://seznamovak.fit.cvut.cz" target="_blank") Seznamovák FIT], kterou organizují studenti FIT.
-
-            article#program
-                .widthWrap
-                    h2 Program
-                    .program-item
-                        h3
-                            .program-item--time 9:55
-                            .program-item--title Úvodní uvítací přednáška
-                            .program-item--host Milan Kurka
-                        p.program-item--excerpt
-
-                    .program-item
-                        h3
-                            .program-item--time 10:00
-                            .program-item--title Všechno, cos kdy chtěl vědět o FITu, ale bál ses zeptat
-                            .program-item--host Milan Kurka, Marcel Petráň, Michal Hošna
-                        p.program-item--excerpt Studium na FITu rozhodně není procházka růžovým sadem. Čeká tě mnoho nových překážek, výzev a . A my ti poradíme, jak to zvládnout! Nabijeme tě informacemi, bez kterých bys první týdny studia jen tápal(a). Povíme ti, jaké budou tvé první dny v kůži vysokoškoláka, jak projít prvním semestrem, jak to na tom FITu vlastně chodí a co všechno jako student můžeš získat. Dozvíš se i informace, na které při Dni otevřených dveří či jiných akcích nezbyl čas, nebo se neříkaly.
-                        ul.program-item--links
-                            li
-                                a(href="https://www.youtube.com/watch?v=Y18VgRXIamg&list=PLQDZvJ2QkdnuiaNCDY3WjRuH7c3Ljcqb-") Záznam
-                            li
-                                a(href=require("./files/slides/HelloFit2019-obecna-prednaska-dopoledne.pdf")) Prezentace (PDF)
-
-                    .program-item
-                        h3
-                            .program-item--time 12:15
-                            .program-item--title Tour de Kampus Dejvice, oběd
-                        p.program-item--excerpt Kam budeš chodit na přednášky, cvičení, na oběd, dobré pivo či si jen odpočinout? Na prohlídce Kampusu Dejvice ti ukážeme všechna důležitá místa tak, aby ses první dny na vejšce hned neztratil(a).
-
-                    .program-item
-                        h3
-                            .program-item--time 14:45
-                            .program-item--title Studentská unie ČVUT aneb život vysokoškoláka není jen studium
-                            .program-item--host Milan Kurka
-                        p.program-item--excerpt Studentský život. To je to, co nám, ČVUŤákům, leckdo závidí. Proč? Protože si můžeme upravit podle sebe, a to především díky aktivitám Studentské unie ČVUT. Láká tě správa serverů na Strahově, kde bydlí přes 4000 lidí? Nebo se chceš podívat na různá místa v zahraničí a ještě se při tom něco naučit? To vše a daleko více je ve Studentské unii ČVUT možné a v této části programu zjistíš víc!
-                        ul.program-item--links
-                            li
-                                a(href="https://www.youtube.com/watch?v=A0n5mqQqyMA&list=PLQDZvJ2QkdnuiaNCDY3WjRuH7c3Ljcqb-") Záznam
-                            li
-                                a(href=require("./files/slides/HelloFit2019-su-cvut.pdf")) Prezentace (PDF)
-
-                    .program-item
-                        h3
-                            .program-item--time 15:15
-                            .program-item--title Získej praxi při studiu s Portálem Spolupráce s průmyslem!
-                            .program-item--host Pavel Kordík
-                        p.program-item--excerpt Jak získat placenou praxi již při studiu? I na to se na FITu myslí – představíme ti Spolupráci s průmyslem a její možnosti.
-                        ul.program-item--links
-                            li
-                                a(href="https://www.youtube.com/watch?v=h144TZKhkvU&list=PLQDZvJ2QkdnuiaNCDY3WjRuH7c3Ljcqb-") Záznam
-
-                    .program-item
-                        h3
-                            .program-item--time 15:45
-                            .program-item--title Ze života absolventa
-                            .program-item--host Vašek Strnad
-                        p.program-item--excerpt Čím že budeš, až vystuduješ FIT? Na jakých projektech se jako absolvent budeš moci podílet v praxi? O tom ti povypráví jeden z prvních absolventů FIT ČVUT Vašek Strnad.
-                        ul.program-item--links
-                            li
-                                a(href="https://www.youtube.com/watch?v=beSF3bvHtZw&list=PLQDZvJ2QkdnuiaNCDY3WjRuH7c3Ljcqb-") Záznam
-                            li
-                                a(href=require("./files/slides/HelloFit2019-Vasek-Strnad.pdf")) Prezentace (PDF)
-
-
-                    .program-item
-                        h3
-                            .program-item--time 16:10
-                            .program-item--title Co je matematika?
-                            .program-item--host Tomáš Kalvoda, Daniel Dombek
-                        p.program-item--excerpt Co je to matematika? Co je to středoškolská matematika? Mají něco společného? Proč je přechod ze středních škol na FIT pro řadu studentů a studentek (nejen) matematických předmětů problematický? Jak se na tento přechod dobře připravit a jak jej zvládnout? Na všechny tyto otázky se pokusíme odpovědět v naší přednášce!
-                        ul.program-item--links
-                            li
-                                a(href="https://www.youtube.com/watch?v=TCgOu_2qly4&list=PLQDZvJ2QkdnuiaNCDY3WjRuH7c3Ljcqb-") Záznam
-                            li
-                                a(href=require("./files/slides/HelloFit2019-matematika.pdf")) Prezentace (PDF)
-
-                    .program-item
-                        h3
-                            .program-item--time 16:55
-                            .program-item--title Programování není guláš
-                            .program-item--host David Bernhauer
-                        p.program-item--excerpt Jak vlastně funguje počítač a jak mu dávat ty nejpřesnější příkazy? Na co je třeba při programování myslet? Praktická ukázka na lidech součástí!
-                        ul.program-item--links
-                            li
-                                a(href="https://www.youtube.com/watch?v=hGDthETdeL8&list=PLQDZvJ2QkdnuiaNCDY3WjRuH7c3Ljcqb-") Záznam
-
-                    .program-item
-                        h3
-                            .program-item--time 18:00
-                            .program-item--title Afterpárty
-                        p.program-item--excerpt ... no a pak se přesuneme na afterpárty, kde už bude vše ready na seznamovací pokec a pořádnou párty. A pojede se až do rána!
-
 
             article#organizatori
                 .widthWrap
@@ -191,62 +99,6 @@ html.no-js(lang="")
                                     img(src=require("./img/icons/email-outline.svg") alt="e-mail" inline)
                             p.contact-box--bio Jarda je člověk, který neřekne ne na žádnou akci. Takže ho uvidíš organizovat spoustu akcí v rámci fakulty, mimo ní a dokonce i FIT++. A pokud shodou okolností neorganizuje, na té akci se stejně potuluje. Poměrně úspěšně dostudoval bakaláře a pokračuji ve FIT krasojízdě. Neodmítá pozvání na Kofolu. Nebo Malinovku. To záleží. Snaží se věnovat i karate.
 
-            article#prednasejici
-                .widthWrap
-                    h2 Přednášející
-                    .contact-boxes-wrapper
-                        .contact-box
-                            .contact-box--photo-wrapper
-                                img(src=require("advanced-image-loader!./img/contacts/tomas-kalvoda.jpg?width=200&quality=80")['src'] alt="Tomáš Kalvoda")
-                            h3 Tomáš Kalvoda
-                            .contact-box--link-icons
-                                a.contact-box--link-icons--icon(href="https://twitter.com/kalvotom" target="_blank")
-                                    img(src=require("./img/icons/twitter.svg") alt="twitter" inline)
-                                a.contact-box--link-icons--icon(href="mailto:tomas.kalvoda@fit.cvut.cz" target="_blank")
-                                    img(src=require("./img/icons/email-outline.svg") alt="e-mail" inline)
-                            p.contact-box--bio Tomáš je vyučujícím na FITu. V prvním ročníku přednáší Základy matematické analýzy. Kromě toho má na starost systém MARAST, s kterým se na FITu setkáte v rámci několika matematických předmětů.
-
-                        .contact-box
-                            .contact-box--photo-wrapper
-                                img(src=require("advanced-image-loader!./img/contacts/daniel-dombek.jpg?width=200&quality=80")['src'] alt="Daniel Dombek")
-                            h3 Daniel Dombek
-                            .contact-box--link-icons
-                                a.contact-box--link-icons--icon(href="https://facebook.com/daniel.dombek.5" target="_blank")
-                                    img(src=require("./img/icons/facebook-box.svg") alt="facebook" inline)
-                                a.contact-box--link-icons--icon(href="mailto:daniel.dombek@fit.cvut.cz" target="_blank")
-                                    img(src=require("./img/icons/email-outline.svg") alt="e-mail" inline)
-                            p.contact-box--bio Daniel je vyučujícím na FITu. Přednáší Lineární algebru v prvním ročníku a Základy diskrétní matematiky ve druhém ročníku. Kromě toho má jakožto rozvrhář na starost tvorbu rozvrhu pro prezenční studenty.
-
-                        .contact-box
-                            .contact-box--photo-wrapper
-                                img(src=require("advanced-image-loader!./img/contacts/david-bernhauer.jpg?width=200&quality=80")['src'] alt="David Bernhauer")
-                            h3 David Bernhauer
-                            .contact-box--link-icons
-                                a.contact-box--link-icons--icon(href="https://twitter.com/bernhdav" target="_blank")
-                                    img(src=require("./img/icons/twitter.svg") alt="twitter" inline)
-                                a.contact-box--link-icons--icon(href="mailto:bernhdav@fit.cvut.cz" target="_blank")
-                                    img(src=require("./img/icons/email-outline.svg") alt="e-mail" inline)
-                            p.contact-box--bio  David není členem FIT++ ani ne­or­ga­ni­zuje Seznamovák. Přesto je IT pozitivní a rád se směje. Programuje již řadu let, zaměřuje se především na webové apli­kace a své zkušenosti předává stu­den­tům na cvičeních z první linie. Buď jako David. „Buď FIT!“
-
-                        .contact-box
-                            .contact-box--photo-wrapper
-                                img(src=require("advanced-image-loader!./img/contacts/pavel-kordik.jpg?width=200&quality=80")['src'] alt="Pavel Kordík")
-                            h3 Pavel Kordík
-                            .contact-box--link-icons
-                                a.contact-box--link-icons--icon(href="https://twitter.com/pavelkordik" target="_blank")
-                                    img(src=require("./img/icons/twitter.svg") alt="twitter" inline)
-                            p.contact-box--bio Pavel Kordík je vyučujícím na FITu, zkoumá automatizaci dataminingu, meta-learning a umělou inteligenci. Kromě toho má na starost Portál spolupráce s průmyslem (SSP), který nabízí zajímavou možnost praxe již během studia.
-
-                        .contact-box
-                            .contact-box--photo-wrapper
-                                img(src=require("advanced-image-loader!./img/contacts/vaclav-strnad.jpg?width=200&quality=80")['src'] alt="Vašek Strnad")
-                            h3 Vašek Strnad
-                            .contact-box--link-icons
-                                a.contact-box--link-icons--icon(href="https://twitter.com/vaclavstrnad" target="_blank")
-                                    img(src=require("./img/icons/twitter.svg") alt="twitter" inline)
-                            p.contact-box--bio Václav dokončil magisterské studium na FITu v roce 2015. Jako člen představenstva a IT&nbsp;ředitel městské společnosti Operátor&nbsp;ICT,&nbsp;a.s. stál za vytvořením karty Lítačka, návrhem současné podoby elektronického odbavovacího systému Pražské integrované dopravy a hlavně za definitivním koncem problematické Opencard. V současné době pracuje jako IT&nbsp;ředitel na Úřadu pro ochranu osobních údajů a vyučuje programování webových aplikací na prestižním pražském gymnáziu Arabská.
-
-
             article#prohlaseni
                 .widthWrap
                     p Akce je organizována klubem FIT++ za podpory Fakulty informačních technologií ČVUT v Praze.
@@ -271,7 +123,7 @@ html.no-js(lang="")
                                 li
                                     a(href="https://klubfitpp.cz" target="_blank") Web
                                 li
-                                    a(href="https://gitlab.com/klubfitpp/hellofitcz_2019" target="_blank") Git
+                                    a(href="https://gitlab.com/klubfitpp/hellofit/hellofit_2020") Git
                                 li
-                                    a(href="https://2018.hellofit.cz" target="_blank") Ročník 2018
-                                li #hellofit2019
+                                    a(href="https://2019.hellofit.cz") Ročník 2019
+                                li #hellofit2020
