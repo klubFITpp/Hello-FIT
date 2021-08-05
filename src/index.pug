@@ -1,4 +1,4 @@
-- const mainMenu = [{"label": "O akci","link": "#o-akci" }, {"label": "Minulý ročník","link": "https://2019.hellofit.cz" }]
+- const mainMenu = [{"label": "O akci","link": "#o-akci" }, {"label": "Program","link": "#program" }, {"label": "Organizatoři","link": "#organizatori" }]
 
 doctype html
 html.no-js(lang="")
@@ -28,11 +28,11 @@ html.no-js(lang="")
         header#header
 
             h1 Hello FIT!
-            time#date 17. září 2020
-            #place Online
+            time#date 14. září 2021 od 10:00
+            #place Fakulta informačních technologií ČVUT (Nová budova ČVUT)
 
             #header-buttons
-                a.button1(href="https://youtu.be/-yH3fQoEQV4" target="_blank") Stream
+                a.button1(href="https://youtu.be/-yH3fQoEQV4" target="_blank") Registrace
                 a.button1(href="https://www.facebook.com/events/722671144968768/" target="_blank") FB Událost
 
         main
@@ -40,25 +40,34 @@ html.no-js(lang="")
             article#o-akci
                 .widthWrap
                     h2 O akci
-                    p Hello FIT! je jednodenní populárně naučný úvod do studia, který ti pomůže s přechodem ze střední školy na FIT. <em>Účast na akci je zdarma</em> a čekají tě zajímavé a užitečné přednášky, workshopy, prohlídky prostor (nejen) fakulty a v neposlední řadě také večerní afterpárty. 
-                    p Hello FIT! je nástupcem akce Technokrati, kterou až do roku 2016 pořádal dnes již bývalý klub tech@SU.
-                    p Jsou pro vás připravovány také další dvě seznamovací akce. První je oficiální seznamovák všech fakult ČVUT, #[a(href="http://seznamovak.cvut.cz" target="_blank") zaČVUTění], který pro tebe připravuje  #[a(href="http://su.cvut.cz" target="_blank") Studentská unie ČVUT]. Další akcí je #[a(href="http://seznamovak.fit.cvut.cz" target="_blank") Seznamovák FIT], kterou organizují studenti FIT.
+                    p Nastupuješ do prvního ročníku bakalářského studia na FIT ČVUT? V tom případě je Hello FIT! akce přímo pro tebe!  
+                    p Hello FIT! je jednodenní úvod do studia, který ti pomůže s přechodem ze střední školy na FIT. Čekají tě zajímavé a užitečné přednášky, workshopy, prohlídky prostor (nejen) fakulty a v neposlední řadě také večerní afterpárty.
+                    p Jsou pro vás připravovány také další dvě seznamovací akce. První je oficiální seznamovák všech fakult ČVUT, zaČVUTění, který pro tebe připravuje Studentská unie ČVUT. Další akcí je Seznamovák FIT, kterou organizují studenti FIT.
 
             article#program
                 .widthWrap
                     h2 Program
-                    p Letošní Hello FIT proběhne kvůli Covidu ve streamované podobě. Nicméně udělat si čas a sednout si k notebooku s šálkem něčeho dobrého je pořád skvělý nápad. Přednáška je jen vzhledem k malým změnám trochu upravena a sestříhána z minulého roku. Bude aktivní chat, kde můžete položit jakoukoliv otázku ohledně FITu. Těšíme se na vás!
-                    .program-item
-                        h3
-                            .program-item--time 15:45
-                            .program-item--title Začátek streamu
+                    p **Přesný program pro tebe momentálně usilovně připravujeme, avšak už teď se můžeš těšit na následující přednášky.**
+                    p V přednášce **Už tomu musíme vymyslet nějaký normální název, fakt :D** se dozvíš, jaké budou tvoje první dny v kůži vysokoškoláka a jak projít (nejen) prvním semestrem. Rady a tipy, které se ti prostě budou hodit.
+                    p Následovně pečlivě **projdeme celý Kampus Dejvice**, aby ti bylo jasné, kde je co za fakultu, koleje, kam si můžeš zajít do menzy či do restaurace a podobně. Díky této prohlídce se už v kampusu neztratíš.
+                    p Protože studentský život není jen usilovné studium, představíme ti **Studentské aktivity na ČVUT** se všemi možnostmi, které nabízí. Láká tě například správa serverů na Strahově, kde bydlí přes 4000 lidí? Nebo se chceš podívat na různá místa v zahraničí a ještě se přitom něco naučit? Baví tě sport, rád chodíš do divadla, hraješ DnD, nebo hry? Při tomhle všem můžeš potkávat i své spolužáky!
+                    p Prozradíme ti informace o **spolupráci s průmyslem** aneb jak získat praxi již při studiu a nenechat se prací omezovat ve studiu. 
+                    p Zúčastníš se **interaktivních přednášek** od Katedry aplikované matematiky a Davida Bernhauera, kde zjistíš, jak se nenechat zdeptat matikou a programováním hned v prvním semestru.
+                    p A pak už nám zbývá jen **afterpárty**, kde si budeš moci popovídat se svými novými spolužáky.
+
+
+
+                    <!--.program-item
+                        h3 
+                            .program-item--time 10:00
+                            .program-item--title Už tomu musíme vymyslet nějaký normální název, fakt :D
                             .program-item--host FIT++
-                        p.program-item--excerpt
-                        ul.program-item--links
+                        p.program-item--excerpt 
+                            ul.program-item--links
                             li
                                 a(href="https://youtu.be/-yH3fQoEQV4") Stream
                             li
-                                a(href=require("./files/slides/HelloFit2020-obecna-prednaska-dopoledne.pdf")) Prezentace (PDF)
+                                a(href=require("./files/slides/HelloFit2020-obecna-prednaska-dopoledne.pdf")) Prezentace (PDF) -->
 
             article#organizatori
                 .widthWrap
@@ -67,21 +76,21 @@ html.no-js(lang="")
                     .contact-boxes-wrapper
                         .contact-box
                             .contact-box--photo-wrapper
-                                img(src=require("advanced-image-loader!./img/contacts/milan-kurka.jpg?width=200&quality=80")['src'] alt="Milan Kurka")
-                            h3 Milan Kurka
+                                img(src=require("advanced-image-loader!./img/contacts/kubo.jpg?width=200&quality=80")['src'] alt="Jakub Bartoň")
+                            h3 Jakub Bartoň
                             .contact-box--link-icons
-                                a.contact-box--link-icons--icon(href="https://facebook.com/kurkamil" target="_blank")
+                              <!--  a.contact-box--link-icons--icon(href="https://facebook.com/kurkamil" target="_blank")
                                     img(src=require("./img/icons/facebook-box.svg") alt="facebook" inline)
                                 a.contact-box--link-icons--icon(href="https://twitter.com/MilanKurka" title="@MilanKurka" target="_blank")
-                                    img(src=require("./img/icons/twitter.svg") alt="twitter" inline)
-                                a.contact-box--link-icons--icon(href="mailto:milan.kurka@fit.cvut.cz" title="milan.kurka@fit.cvut.cz" target="_blank")
+                                    img(src=require("./img/icons/twitter.svg") alt="twitter" inline) -->
+                                a.contact-box--link-icons--icon(href="mailto:bartoj35@fit.cvut.com" title="bartoj35@fit.cvut.com" target="_blank")
                                     img(src=require("./img/icons/email-outline.svg") alt="e-mail" inline)
-                            p.contact-box--bio Milan je bývalý student FITu, kde momentálně pracuje na PR oddělení, takže ho uvidíš prakticky na každé akci. Zároveň zastává pozici PR ve Studentské unii ČVUT, takže ví, kde se jaká párty rozjíždí. Prsty má také ve festivalech Strahov OpenAir, SHOW Strahov a dalších akcích. Ve volném čase se zajímá o grafický design, nová média a pivo. Jo, hlavně pivo. A rád na něj s vámi zajde!
+                            p.contact-box--bio Kubo právě prošel prvním ročníkem FITu. Kromě studia Bezpečnosti, se věnuje všemožným sportům. Je členem klubu FIT++ a mimo jiné se podílí na organizaci Dejvické Šifrovačky. 
 
-                        .contact-box
+                       <!-- .contact-box
                             .contact-box--photo-wrapper
                                 img(src=require("advanced-image-loader!./img/contacts/marcel-petran.jpg?width=200&quality=80")['src'] alt="Marcel Petráň")
-                            h3 Marcel Petráň
+                            h3 Damián Baraník
                             .contact-box--link-icons
                                 a.contact-box--link-icons--icon(href="https://facebook.com/marcel.petran.3" target="_blank")
                                     img(src=require("./img/icons/facebook-box.svg") alt="facebook" inline)
@@ -89,20 +98,33 @@ html.no-js(lang="")
                                     img(src=require("./img/icons/twitter.svg") alt="twitter" inline)
                                 a.contact-box--link-icons--icon(href="mailto:petram21@fit.cvut.cz" title="petram21@fit.cvut.cz" target="_blank")
                                     img(src=require("./img/icons/email-outline.svg") alt="e-mail" inline)
-                            p.contact-box--bio Marcel je zde poměrně nový. Sice studuje bakaláře prvním rokem, ale za tu dobu se stihl zapojit do mnoha projektů. Je také znám jako “Kluk z plakátu” a můžete ho najít na mnoha propagačních materiálech FITu. Kromě toho organizuje LAN party jak na FITu, tak i na své koleji. Aktivně se zapojuje do různých akcí a dělá dokonce admina na Sincoolce. Svůj volný čas využívá ke grafickému a webovému designu a je velký milovník memes, které taky sem tam tvoří.
+                            p.contact-box--bio Marcel je zde poměrně nový. Sice studuje bakaláře prvním rokem, ale za tu dobu se stihl zapojit do mnoha projektů. Je také znám jako “Kluk z plakátu” a můžete ho najít na mnoha propagačních materiálech FITu. Kromě toho organizuje LAN party jak na FITu, tak i na své koleji. Aktivně se zapojuje do různých akcí a dělá dokonce admina na Sincoolce. Svůj volný čas využívá ke grafickému a webovému designu a je velký milovník memes, které taky sem tam tvoří. -->
+
+                       <!-- .contact-box
+                            .contact-box--photo-wrapper
+                                img(src=require("advanced-image-loader!./img/contacts/marcel-petran.jpg?width=200&quality=80")['src'] alt="Marcel Petráň")
+                            h3 Matěj Havránek
+                            .contact-box--link-icons
+                                a.contact-box--link-icons--icon(href="https://facebook.com/marcel.petran.3" target="_blank")
+                                    img(src=require("./img/icons/facebook-box.svg") alt="facebook" inline)
+                                a.contact-box--link-icons--icon(href="https://twitter.com/marcelpetran" title="@marcelpetran" target="_blank")
+                                    img(src=require("./img/icons/twitter.svg") alt="twitter" inline)
+                                a.contact-box--link-icons--icon(href="mailto:petram21@fit.cvut.cz" title="petram21@fit.cvut.cz" target="_blank")
+                                    img(src=require("./img/icons/email-outline.svg") alt="e-mail" inline)
+                            p.contact-box--bio Marcel je zde poměrně nový. Sice studuje bakaláře prvním rokem, ale za tu dobu se stihl zapojit do mnoha projektů. Je také znám jako “Kluk z plakátu” a můžete ho najít na mnoha propagačních materiálech FITu. Kromě toho organizuje LAN party jak na FITu, tak i na své koleji. Aktivně se zapojuje do různých akcí a dělá dokonce admina na Sincoolce. Svůj volný čas využívá ke grafickému a webovému designu a je velký milovník memes, které taky sem tam tvoří. -->
 
                         .contact-box
                             .contact-box--photo-wrapper
-                                img(src=require("advanced-image-loader!./img/contacts/anna-sajdokova.jpg?width=200&quality=80")['src'] alt="Anna Sajdoková")
-                            h3 Anna Sajdoková
+                                img(src=require("advanced-image-loader!./img/contacts/lucka.jpg?width=200&quality=80")['src'] alt="Lucie Procházková")
+                            h3 Lucie Procházková
                             .contact-box--link-icons
-                                a.contact-box--link-icons--icon(href="https://www.facebook.com/sajdoann/" target="_blank")
-                                    img(src=require("./img/icons/facebook-box.svg") alt="facebook" inline)                                
-                                a.contact-box--link-icons--icon(href="mailto:sajdokova@gmail.com" title="sajdokova@gmail.com" target="_blank")
+                                a.contact-box--link-icons--icon(href="https://twitter.com/LuckaProch" target="_blank")
+                                    img(src=require("./img/icons/twitter.svg") alt="twitter" inline)                                
+                                a.contact-box--link-icons--icon(href="mailto:prochl10@fit.cvut.cz" title="prochl10@fit.cvut.cz" target="_blank")
                                     img(src=require("./img/icons/email-outline.svg") alt="e-mail" inline)
-                            p.contact-box--bio Zrovna jsem dokončila první ročník fit, takže k radostem, postřehům a problémům prváka mám hodně blízko:) Pomáhala jsem organizovat ICSko - letní kurz programování pro Středoškoláky, zúčastnila jsem se fakultní soutěž Fiks, kterou teď pomáhám organizovat. Když zrovna nedělám progtest, chodím někde po horách, sleduju seriály, něco organizuju nebo se jen tak flákám. Ráda zajdu na Cider a kofču.
+                            p.contact-box--bio Lucka je momentálně předsedkyně našeho fakultního klubu FIT++. Angažuje se, kde může, takže na ní narazíš na Strahově, ve škole, kde cvičí předmět BI-AAG, ve Student Hubu, který pomáhala zakládat, v redakci časopisu Buď FIT a samozřejmě kdekoli, kde se vyskytuje možnost potkat nové lidi.
                             
-                        .contact-box
+                       <!-- .contact-box
                             .contact-box--photo-wrapper
                                 img(src=require("advanced-image-loader!./img/contacts/jaroslav-kriz.jpg?width=200&quality=80")['src'] alt="Jaroslav Kříž")
                             h3 Jaroslav Kříž
@@ -113,7 +135,7 @@ html.no-js(lang="")
                                     img(src=require("./img/icons/twitter.svg") alt="twitter" inline)
                                 a.contact-box--link-icons--icon(href="mailto:krizjar5@fit.cvut.cz" title="krizjar5@fit.cvut.cz" target="_blank")
                                     img(src=require("./img/icons/email-outline.svg") alt="e-mail" inline)
-                            p.contact-box--bio Jarda je člověk, který neřekne ne na žádnou akci. Takže ho uvidíš organizovat spoustu akcí v rámci fakulty, mimo ní a dokonce i FIT++. A pokud shodou okolností neorganizuje, na té akci se stejně potuluje. Poměrně úspěšně dostudoval bakaláře a pokračuji ve FIT krasojízdě. Neodmítá pozvání na Kofolu. Nebo Malinovku. To záleží. Snaží se věnovat i karate.
+                            p.contact-box--bio Jarda je člověk, který neřekne ne na žádnou akci. Takže ho uvidíš organizovat spoustu akcí v rámci fakulty, mimo ní a dokonce i FIT++. A pokud shodou okolností neorganizuje, na té akci se stejně potuluje. Poměrně úspěšně dostudoval bakaláře a pokračuji ve FIT krasojízdě. Neodmítá pozvání na Kofolu. Nebo Malinovku. To záleží. Snaží se věnovat i karate. -->
 
             article#prohlaseni
                 .widthWrap
